@@ -51,6 +51,7 @@ interface AppStoreState {
   handleOnChangeSearchSelect: (e: React.ChangeEvent<HTMLInputElement>) => void
   handleOnChangeSearchTerm: (e: React.ChangeEvent<HTMLInputElement>) => void
   handleOnClickCategory : (liValue: string) => void
+  handleOnChangeSelect : (selectValue: string) => void
   handleOffersEvent: () => void
   handleSignInStatus: () => void
   handleFormNewsletter: (e: React.FormEvent<HTMLInputElement>) => void
@@ -219,7 +220,7 @@ export const useStore = create<AppStoreState>((set, get):AppStoreState => ({
   initialItems: [],
   users: [],
   companies: [],
-  
+
   newsLetterEmail: '',
   signInStatus: false,
   signInData: [],
@@ -251,14 +252,14 @@ export const useStore = create<AppStoreState>((set, get):AppStoreState => ({
 
     if (signInStatus === true) {
 
-      let itemsCopy = JSON.parse(JSON.stringify(get().items))
+      let itemsCopy: Items[] = JSON.parse(JSON.stringify(get().items))
       const index: number = itemsCopy.findIndex(target => target.id === product.id)
 
-      const item = itemsCopy[index]
+      const item: Items = itemsCopy[index]
 
       if (item.stock > 0) {
 
-        const newItem = {
+        const newItem: Items = {
             ...item,
             quantity: item.quantity ? item.quantity + 1 : 1,
             stock: item.stock - 1
@@ -474,7 +475,7 @@ export const useStore = create<AppStoreState>((set, get):AppStoreState => ({
 
       alert("You cannot have more than the stock of the item")
       
-      const newItem = { ...item, quantity: 1 }
+      const newItem: Items = { ...item, quantity: 1 }
       productsCopy[index] = newItem
 
       set({items: productsCopy})
