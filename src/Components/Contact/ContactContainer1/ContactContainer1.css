@@ -1,0 +1,80 @@
+/*Here layouts start */
+section.contact-container-1 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(/assets/images/main/136.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    grid-template: 
+    "header" 70px
+    "main" 1fr /
+    1fr;
+}
+
+section.contact-container-1 header.header {
+    grid-area: header;
+}
+
+section.contact-container-1 main.main {
+    grid-area: main;
+    /* outline: 0.5px solid #111111; */
+    display: grid;
+    place-items: center;
+}
+
+section.contact-container-1 main.main .main-post {
+    display: grid;
+    place-items: center;
+    grid-gap: 5px;
+}
+
+section.contact-container-1 main.main .main-post h1 {
+    font-size: 65px;
+    letter-spacing: normal;
+    font-weight: 800;
+    font-family: sans-serif;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+section.contact-container-1 main.main .main-post h2 {
+    font-size: 65px;
+    letter-spacing: normal;
+    font-weight: 800;
+    font-family: sans-serif;
+    color: #ffa800;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+
+section.contact-container-1 main.main .main-post p {
+    font-size: 18px;
+    letter-spacing: normal;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: #fff;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+}
+
+section.contact-container-1 main.main .main-post button {
+    padding: 15px 15px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: #ffa500;
+    color: #fff;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 700;
+    letter-spacing: normal;
+}
+
+section.contact-container-1 main.main .main-post button:hover {
+    background-color: #cacaca;
+    color: #111111;
+    transition: 1s;
+    cursor: pointer;
+}

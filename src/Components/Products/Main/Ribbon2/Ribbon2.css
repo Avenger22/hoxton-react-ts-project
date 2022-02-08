@@ -1,0 +1,72 @@
+section.container-menus .main-ribbon-2 {
+    grid-area: main-ribbon-2;
+    background-color: #f1f1f1;
+
+    display: grid;
+    grid-template-columns: 0.1fr 0.7fr 0.2fr;
+    grid-gap: 40px;
+    align-items: center;
+    align-content: center;
+}
+
+section.container-menus .main-ribbon-2 .box-wrapper-1 {
+    display: grid;
+    grid-template-columns: 30px 150px;
+    grid-gap: 25px;
+    align-content: center;
+    align-items: center;
+
+    padding-left: 30px;
+}
+
+section.container-menus .main-ribbon-2 form.new-select-page {
+    display: grid;
+    grid-template-columns: 150px 50px;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+section.container-menus .main-ribbon-2 form#filter-by-sort {
+    display: grid;
+    grid-template-columns: 150px 0.6fr;
+    grid-gap: 15px;
+    align-items: center;
+}
+
+section.container-menus .main-ribbon-2 form#filter-by-sort select {
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    outline: 1px solid #022335;
+    width: 350px;
+}
+
+section.container-menus .main-ribbon-2 form.new-select-page select {
+    height: 20px;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    outline: 1px solid #022335;
+    width: 50px;
+}
+
+section.container-menus .main-ribbon-2 form#filter-by-sort label h3 {
+    font-size: 16px;
+}
+
+section.container-menus .main-ribbon-2 form.new-select-page label h3 {
+    font-size: 14px;
+}
+
+section.container-menus .main-ribbon-2 .box-wrapper-1 .number-span {
+    font-weight: 900;
+    font-size: 16px;
+    color: #d40a0a;
+    display: grid;
+    align-self: center;
+}
+
+section.container-menus .main-ribbon-2 .box-wrapper-1 span {
+    padding-top: 5px;
+}

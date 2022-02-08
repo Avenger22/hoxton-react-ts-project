@@ -1,0 +1,29 @@
+/*Here the content for contact page */
+section.contact-container-2 {
+    height: auto;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    grid-gap: 30px;
+    grid-template-rows: 0.1fr 0.9fr;
+}
+
+section.contact-container-2 .map-contact {
+  display: grid;
+  place-items: center;
+  width: 70%;
+  padding-bottom: 40px;
+}
+
+section.contact-container-2 .location {
+  display: grid;
+  place-items: center;
+}
+
+section.contact-container-2 .location h2 {
+  font-size: 40px;
+  font-weight: 700;
+  /* font-style: italic; */
+  color: #060208;
+  padding-top: 40px;
+}

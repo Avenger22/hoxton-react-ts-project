@@ -1,0 +1,14 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    overflow-x: hidden; /* removes scroll in bottom */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    transition: 1s;
+    color: #fff;
+}

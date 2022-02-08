@@ -1,0 +1,246 @@
+@media screen and (max-width: 1200px) {
+    section.blog-item-container-1 main.main .main-bottom-ribbon {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+
+    }
+
+    section.blog-item-container-1 .ribbon-blog .ribbon-2 {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 15px;
+        justify-content: center;
+        align-content: center;
+    }
+
+    section.blog-item-container-1 main.main .main-post .text .paragraphs p {
+        width: 85ch;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    section.blog-item-container-2 .photo-menu-wrapper {
+        display: grid;
+        grid-template-rows: 0.1fr 0.9fr;
+        grid-gap: 20px;
+    }
+
+    section.blog-item-container-2 .photo-menu-wrapper .photo-items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+   
+    section.blog-item-container-1 header.header .header-group-1 li {
+        font-size: 14px;
+    }
+
+    section.blog-item-container-1 main.main .main-post .text .paragraphs p {
+        width: 75ch;
+        font-size: 16px;
+    }
+
+    section.blog-item-container-1 header.header .header-group-2 li {
+        font-size: 14px;
+    }
+
+    section.blog-item-container-1 main .main-post h1{
+        font-size: 42px;
+    }
+
+    section.blog-item-container-1 main .main-post h2{
+        font-size: 32px;
+    }
+
+    section.blog-item-container-1 main .main-post p{
+        font-size: 15px;
+    }
+
+    section.blog-item-container-1 .ribbon-blog {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: auto;
+    }
+
+    section.blog-item-container-1 .ribbon-blog .ribbon-2 {
+        display: none;
+    }
+
+    section.blog-item-container-1 .ribbon-blog .ribbon-1 h3 {
+        display: grid;
+        place-self: center;
+        font-size: 16px;
+        padding-left: 30px;
+    }
+
+    section.blog-item-container-2 .share-wrapper {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    section.blog-item-container-1 main.main .main-post .image-box {
+        display: grid;
+        justify-content: start;
+        justify-items: start;
+    }
+
+    section.blog-item-container-2 .share-wrapper {
+        width: 55%;
+    }
+
+    section.blog-item-container-1 main.main .main-post .image-box img {
+        width: 95%;
+        padding-left: 15px;
+    }
+
+    section.blog-item-container-1 main.main .main-post .text .paragraphs p {
+        width: 70ch;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section.blog-item-container-1 header.header .header-group-1 li {
+        font-size: 12px;
+    }
+
+    section.blog-item-container-2 .share-wrapper {
+        width: 65%;
+    }
+
+    section.blog-item-container-1 main.main .main-post .text .paragraphs p {
+        width: 60ch;
+        display: grid;
+        place-self: center;
+        font-size: 14px;
+    }
+
+    section.blog-item-container-1 main.main .main-post .image-box img {
+        width: 80%;
+        display: grid;
+        place-self: center;
+        height: 130%;
+    }
+
+    section.blog-item-container-1 header.header .header-group-2 li {
+        font-size: 12px;
+    }
+
+    section.blog-item-container-1 header.header .header-group-1 li {
+        font-size: 12px;
+    }
+
+    section.blog-item-container-1 header.header .header-group-2 li {
+        font-size: 12px;
+    }
+
+    section.blog-item-container-2 .photo-menu-wrapper .photo-items {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    section.blog-item-container-1 main.main .main-post .image-box img {
+        width: 80%;
+        display: grid;
+        place-self: center;
+        height: 150%;
+    }
+
+    section.blog-item-container-2 .share-wrapper {
+        width: 75%;
+    }
+
+    section.blog-item-container-2 .share-wrapper .share-header h4 {
+        font-size: 14px;
+    }
+
+    section.blog-item-container-2 .share-wrapper .share-icons i {
+        font-size: 20px;
+    }
+
+    section.blog-item-container-1 main.main .main-post .image-box {
+       padding-bottom: 30px;
+    }
+
+    section.blog-item-container-1 main.main .main-post .text .paragraphs p {
+        width: 55ch;
+        font-size: 14px;
+    }
+
+    section.blog-item-container-1 main.main .main-post .text .paragraphs {
+        display: grid;
+        place-items: center;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    section.blog-item-container-1 main.main .main-post .text .paragraphs p {
+        width: 35ch;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    section.blog-item-container-1 main.main .main-post .text .paragraphs p {
+        width: 35ch;
+        font-size: 14px;
+    }
+    
+    section.blog-item-container-1 .ribbon-blog {
+        width: 100%;
+    }
+
+    section.blog-item-container-1 main.main .main-post h1 {
+        display: grid;
+        place-self: center;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    section.blog-item-container-1 main.main .main-post h2 {
+        display: grid;
+        place-self: center;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    section.blog-item-container-1 main.main .main-post p {
+        display: grid;
+        place-self: center;
+        font-size: 18px;
+    }
+
+    section.blog-item-container-1 main.main .main-post button {
+        display: grid;
+        place-self: center;
+        font-size: 14px;
+    }
+
+    section.blog-item-container-1 header.header .header-group-1 li {
+        font-size: 10px;
+    }
+
+    section.blog-item-container-1 header.header .header-group-2 li {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    section.blog-item-container-1 {
+        width: 100%;
+    }
+
+    section.blog-item-container-2 {
+        width: auto;
+    }
+
+    section.blog-item-container-3 {
+        width: auto;
+    }
+}

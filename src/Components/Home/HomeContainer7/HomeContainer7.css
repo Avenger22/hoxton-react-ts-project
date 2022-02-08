@@ -1,0 +1,72 @@
+section.home-container-7 {
+    height: 40vh;
+    width: 100%;
+    /* background-color: #e52b50; */
+    background-image: url(/assets/images/main/abastract\ background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    place-items: center;
+  }
+
+section.home-container-7 .newsletter-wrapper {
+    display: grid;
+    /* outline: 0.5px solid #a9bad1; */
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+    grid-gap: 40px;
+  }
+
+  section.home-container-7 form {
+      display: grid;
+      grid-template-columns: 0.8fr 0.2fr;
+  }
+
+section.home-container-7 .newsletter-search {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+section.home-container-7 .newsletter-wrapper input {
+    padding: 15px 30px;
+    width: 550px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #111213;
+    background-color: #fff;
+    border: none;
+}
+
+section.home-container-7 .newsletter-wrapper button {
+    padding: 15px 50px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: sans-serif;
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    grid-gap: 5px;
+    cursor: pointer;
+    color: #060607;
+    background-color: #d8531e;
+}
+
+section.home-container-7 .newsletter-wrapper button:hover {
+    background-color: #f5cf04;
+    color: #fff;
+    transition: 1s;
+}
+
+section.home-container-7 .newsletter-header h4 {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: normal;
+    font-family: sans-serif;
+    color: #000;
+    border-bottom: 3px solid #679ce6;
+    padding-bottom: 5px;
+    /* border-bottom-width: ; */
+}

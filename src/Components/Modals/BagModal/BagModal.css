@@ -1,0 +1,134 @@
+/* #region 'BAG-MODAL' */
+.modal-bag_container {
+    height: 100vh;
+    width: 100%;
+    pointer-events: none;
+    position: fixed;
+    display: none;
+    z-index: 1;
+}
+
+.modal-bag_container.show {
+    pointer-events: auto;
+    display: grid;
+    grid-template-rows: 1fr;
+    place-items: center;
+    opacity: 1;
+    background-color: rgba(230, 90, 50, 0.3);
+}
+
+.modal-bag {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+    height: 500px;
+    width: 800px;
+    background-color: #f1f1f6;
+    place-items: center;
+    overflow: scroll;
+}
+
+.modal-bag_wrapper {
+    display: grid;
+    grid-template-rows: 0.1fr 0.5fr 50px;
+    grid-gap: 60px;
+    place-items: center;
+}
+
+.modal-bag .header-bag {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    padding-top: 50px;
+}
+
+.modal-bag .item-bag {
+    display: grid;
+    grid-template:
+    "img-item-bag h4-item-bag h4-item-bag h4-item-bag" 80px
+    "img-item-bag span-1-item-bag span-2-item-bag span-3-item-bag" 80px
+    "img-item-bag button-item-bag button-item-bag button-item-bag" 40px /
+    150px 100px 100px 100px ;
+}
+
+.wrapper-items-bag {
+    display: grid;
+    grid-template-rows: auto;
+    grid-gap: 80px;
+}
+
+.item-bag img {
+    grid-area: img-item-bag;
+    height: 100px;
+}
+
+.item-bag h4 {
+    grid-area: h4-item-bag;
+    font-size: 18px;
+}
+
+.item-bag .span-1-bag {
+    grid-area: span-1-item-bag;
+}
+
+.item-bag .span-2-bag {
+    grid-area: span-2-item-bag;
+}
+
+.item-bag .span-3-bag {
+    grid-area: span-3-item-bag;
+}
+
+.item-bag button {
+    grid-area: button-item-bag;
+    padding: 5px 5px;
+    outline: none;
+    border: none;
+    background-color: #c22048;
+    color: #f1f1f6;
+    cursor: pointer;
+}
+
+.modal-bag .removing-bag {
+    display: grid;
+    grid-template-columns: 200px 35px;
+    place-items: center;
+}
+
+.modal-bag .removing-bag button {
+    border: none;
+    outline: none;
+    background-color: #c22048;
+    color: #f1f1f6;
+    padding: 15px 15px;
+    cursor: pointer;
+}
+
+span.span-user-login {
+    display: none;
+}
+
+span.span-user-login.show {
+    display: inline-block;
+    color: #1d2f55;
+}
+
+span.span-bag-stock {
+    display: none;
+}
+
+span.span-bag-stock.show {
+    display: grid;
+    place-self: center;
+    color: #c22048;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+span.new-item-date {
+    font-size: 16px;
+    color: #c22048;
+    font-style: italic;
+    font-weight: 900;
+}
+/* #endregion */

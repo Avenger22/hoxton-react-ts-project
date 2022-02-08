@@ -1,0 +1,110 @@
+section.home-container-2 {
+    background-color: #f2f2f2;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+
+section.home-container-2  .box {
+    display: grid;
+    grid-template:     
+    "box-image box-header" 0.1fr    
+    "box-image box-form" 0.9fr /     
+    0.2fr 0.8fr;
+
+    background-image: url(/assets/images/main/vector-JUL-2020-132.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    width: 90%;
+    border-radius: 20px;
+}
+
+section.home-container-2  .box .box-image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+section.home-container-2  .box .box-header {
+    display: grid;
+    place-items: center;
+    grid-template-rows: 60px 60px;
+}
+
+section.home-container-2  .box .box-header h2 {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    font-style: italic;
+    padding-top: 10px;
+}
+
+section.home-container-2  .box-image {
+    grid-area: box-image;
+    border-radius: 20px;
+}
+
+section.home-container-2  .box .box-button {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+section.home-container-2  .box .box-button button {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: sans-serif;
+    padding: 20px 25px;
+    border-radius: 10px;
+    background-color: #e52b50;
+    color: #fff;
+    border: 5px solid #a9bad1;
+}
+
+section.home-container-2  .box .box-button button:hover {
+    background-color: #b1b8c2;
+    color: #000;
+    transition: 1s;
+}
+
+section.home-container-2  .box .box-form {
+    display: grid;
+    grid-template-rows: 0.7fr 0.3fr;
+    grid-gap: 20px;
+    place-content: center;
+}
+
+section.home-container-2  .box .box-form input {
+    padding: 20px 10px;
+    border: none;
+    border-bottom: 10px solid #e52b50;
+    width: 80%;
+    outline: none;
+    width: 150px;
+}
+
+section.home-container-2  .box .box-form .input-holders input:focus {
+    border: none;
+    outline: none;
+}
+
+section.home-container-2 .box-header {
+    grid-area: box-header;
+}
+
+section.home-container-2  .box-button {
+    grid-area: box-button;
+    padding-top: 150px;
+}
+
+section.home-container-2  .box-form .input-holders {
+    grid-area: box-form;
+    display: grid;
+    grid-template-columns: 0.33fr 0.33fr 0.34fr;
+    grid-gap: 40px;
+    padding-bottom: 150px;
+}

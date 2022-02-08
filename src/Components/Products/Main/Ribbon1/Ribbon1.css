@@ -1,0 +1,39 @@
+section.container-menus .main-ribbon-1 {
+    grid-area: main-ribbon-1;
+    background-color: #f1f1f1;
+    align-items: center;
+    align-content: center;
+    height: 40px;
+}
+
+section.container-menus .span-wrapper {
+    padding-left: 30px;
+    display: grid;
+    grid-template-columns: 60px 10px 60px;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    grid-gap: 20px;
+}
+
+section.container-menus .span-wrapper-item {
+    display: grid;
+    grid-template-columns: 0.3fr 0.7fr;
+    grid-gap: 10px;
+}
+
+section.container-menus .span-wrapper-item  span {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0d2335;
+}
+
+section.container-menus .span-wrapper span {
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+section.container-menus #special-home {
+    color: #d40a0a;
+}

@@ -1,0 +1,92 @@
+section.home-container-10 {
+    height: 100vh;
+    width: 100%;
+    /* background-color: #e52b50; */
+    background-image: url(/assets/images/main/12133.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-rows: 0.2fr 0.6fr 0.2fr;
+    grid-gap: 30px;
+    place-items: center;
+}
+
+section.home-container-10 .companies-header {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: normal;
+    color: #060208;
+    padding-top: 50px;
+}
+
+section.home-container-10 .companies {
+    display: grid;
+    grid-template-columns: 0.33fr 0.33fr 0.34fr;
+    grid-gap: 20px;
+    place-items: center;
+}
+
+section.home-container-10 .companies .company span {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: normal;
+    color: rgb(243, 225, 225);
+}
+
+section.home-container-10 .companies .company img {
+    display: grid;
+    place-self: center;
+    height: 150px;
+    width: 150px;
+}
+
+section.home-container-10 .companies .company span.company-span {
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: normal;
+    color: #111111;
+    font-style: italic;
+}
+
+section.home-container-10 .companies .company {
+    display: grid;
+    grid-template-rows: 0.33fr 0.33fr 0.34fr;
+    grid-gap: 10px;
+}
+
+section.home-container-10 .offer {
+    display: grid;
+    grid-template-columns: 0.7fr 0.3fr;
+    grid-gap: 30px;
+    place-items: center;
+    /* place-content: center; */
+}
+
+section.home-container-10 .offer h4 {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: normal;
+    color: #fff;
+}
+
+section.home-container-10 .offer button {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: normal;
+    color: #fff;
+    padding: 10px 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #060208;
+    border: none;
+    cursor: pointer;
+}
+
+section.home-container-10 .offer button:hover {
+    color: rgb(10, 10, 10);
+    background-color: #f5f2f6;
+    border: none;
+    transition: 1s;
+}

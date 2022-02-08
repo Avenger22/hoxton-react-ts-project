@@ -1,0 +1,63 @@
+/* #region 'POP-UP-MODAL' */
+.modal-pop_up-container {
+    height: 100vh;
+    width: 100%;
+    pointer-events: none;
+    position: fixed;
+    display: none;
+    z-index: 1;
+}
+
+.modal-pop_up-container.show {
+    pointer-events: auto;
+    display: grid;
+    grid-template-rows: 1fr;
+    place-items: center;
+    place-content: center;
+
+    opacity: 1;
+    background-color: rgba(230, 90, 50, 0.3);
+}
+
+.modal-pop_up {
+    display: grid;
+    grid-template-rows: 200px 100px;
+    grid-gap: 35px;
+
+    background-color: #f1f1f6;
+    height: 450px;
+    width: 650px;
+
+    place-content: center;
+    place-items: center;
+}
+
+.modal-pop_up input {
+    height: 35px;
+    border: none;
+    outline: none;
+}
+
+.wrapper-subs {
+    display: grid;
+    grid-template-rows: 1fr;
+    place-items: center;
+    grid-gap: 20px;
+}
+
+.modal-pop_up span {
+    font-size: 16px;
+    color: #524b4b;
+    font-weight: 800;
+    width: 45ch;
+    padding-left: 50px;
+}
+
+.modal-pop_up button {
+    border: none;
+    background-color: #d40a0a;
+    cursor: pointer;
+    width: 80px;
+    height: 50px;
+}
+/* #endregion

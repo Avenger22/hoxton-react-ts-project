@@ -1,0 +1,53 @@
+section.coaches-wrapper {
+    padding-top: 100px;
+    height: auto;
+    width: 100%;
+    padding-bottom: 100px;
+
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    grid-gap: 30px;
+}
+
+section.coaches-wrapper .team-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 0.33fr);
+    grid-gap: 25px;
+    padding-left: 15px;
+}
+
+section.coaches-wrapper .team-wrapper .box {
+    display: grid;
+    grid-template-rows: 1fr;
+    place-items: center;
+
+    height: 450px;
+    width: 400px;
+    cursor: pointer;
+    border: 1px solid rgb(212, 200, 200);
+}
+
+section.coaches-wrapper .box img {
+    height: 330px;
+    width: 350px;
+}
+
+section.coaches-wrapper .box span {
+    color: rgb(49, 86, 209);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: normal;
+}
+
+section.coaches-wrapper .box h3 {
+    font-size: 26px;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+
+section.coaches-wrapper .header-team h2 {
+    display: grid;
+    place-items: center;
+    font-size: 28px;
+    color: rgb(235, 33, 33);
+}

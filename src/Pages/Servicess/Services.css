@@ -1,0 +1,46 @@
+section.boxes-wrapper {
+    padding-top: 100px;
+    height: auto;
+    width: 100%;
+    padding-bottom: 100px;
+
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    grid-gap: 20px;
+}
+
+section.boxes-wrapper .services-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+
+    padding-left: 25px;
+}
+
+section.boxes-wrapper .services-wrapper .box {
+    display: grid;
+    grid-template-rows: 1fr;
+    place-items: center;
+
+    height: 320px;
+    width: 400px;
+    cursor: pointer;
+    border: 0.5px solid rgb(197, 188, 188);
+}
+
+section.boxes-wrapper .box img {
+    height: 250px;
+    width: 100%;
+}
+
+section.boxes-wrapper .box span {
+    color: #000;
+    font-size: 22px;
+}
+
+section.boxes-wrapper  .header-service h2 {
+    display: grid;
+    place-items: center;
+    font-size: 28px;
+    color: rgb(235, 33, 33);
+}

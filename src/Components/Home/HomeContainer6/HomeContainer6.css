@@ -1,0 +1,164 @@
+section.home-container-6 {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 0.1fr 0.8fr 100px;
+    grid-gap: 30px;
+    background-image: url(/assets/images/main/testimonial-bg-fullwidth.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    place-items: center;
+}
+
+section.home-container-6 .button-cards-2 {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: normal;
+    font-family: sans-serif;
+    padding: 15px 25px;
+    color: #f2f2f2;
+    background-color: #ffa500;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 1px solid #b1b8c2;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+section.home-container-6 .button-cards-2:hover {
+    color: #679ce6;
+    background-color: #d6c981;
+}
+
+section.home-container-6 .cards-2 {
+    display: grid;
+    grid-template-columns: 0.25fr 0.25fr 0.25fr 0.25fr;
+    grid-gap: 20px;
+    place-items: center;
+    place-content: center;
+    width: auto;
+}
+
+section.home-container-6 .cards-2 .card-2 {
+    display: grid;
+    grid-template-rows: 250px 30px 30px 30px;
+    grid-gap: 20px;
+    place-items: center;
+    background-color: #e3e7eb;
+    height: auto;
+    width: 300px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding-bottom: 30px;
+}
+
+section.home-container-6 .cards-2 .card-2:hover {
+    transition: 1s;
+    box-shadow: -1px 5px 6px 8px rgba(0,0,0,0.23);
+    -webkit-box-shadow: -1px 5px 6px 8px rgba(0,0,0,0.23);
+    -moz-box-shadow: -1px 5px 6px 8px rgba(0,0,0,0.23);
+}
+
+section.home-container-6 .cards-2 .card-2 img {
+    height: 200px;
+    width: 240px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+section.home-container-6 .cards-2 .card-2 img:hover {
+    opacity: 0.5;
+    transition: 1s;
+}
+
+section.home-container-6 .cards-2 .card-2 p {
+    /* display: grid;
+    place-self: center; */
+    font-family: sans-serif;
+    color: #060208;
+    padding-left: 80px;
+    
+}
+
+section.home-container-6 .text-box-3 {
+    display: grid;
+    place-items: center;
+    grid-gap: 10px;
+    padding-top: 20px;
+}
+
+section.home-container-6 .text-box-3 h4 {
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: normal;
+    font-family: "icofont";
+    color: #ffa800;
+}
+
+section.home-container-6 .text-box-3 p {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: normal;
+    font-family: sans-serif;
+    color: #fff;
+    letter-spacing: normal;
+}
+
+section.home-container-6 .card-2 h5 {
+    font-size: 22px;
+    font-weight: 700;
+    font-family: "icofont";
+    color: #000;
+}
+
+section.home-container-6 .card-2 p {
+    font-size: 12px;
+    font-weight: 700;
+    font-family: sans-serif;
+    width: 40ch;
+    /* padding: 0px 5px; */
+    display: grid;
+    place-self: center;
+}
+
+section.home-container-6 .card-2 a {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: normal;
+    font-family: sans-serif;
+    color: #679ce6;
+}
+
+section.home-container-6 .btn-all-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    place-content: center;
+}
+
+section.home-container-6 .all-team-btn {
+    font-size: 14px;
+    color: #fff;
+    background-color: #679ce6;
+    padding: 15px 25px;
+    border: none;
+    cursor: pointer;
+
+    display: grid;
+    place-self: center;
+}
+
+section.home-container-6 .all-team-btn:hover {
+    color: #1f2c3f;
+    background-color: #d6c981;
+}

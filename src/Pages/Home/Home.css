@@ -1,0 +1,393 @@
+/*DEFAULT VALUES  had a problem with header not quite responsive and the right header magically moved like 100 px from right to left and caused problems but with AUTO in grid fixed it also add AUTO to 900 px media query especially the last button*/
+@font-face {
+    src: url(/assets/fonts/icofont.ttf);
+    font-family: 'icofont';
+}
+
+@font-face {
+    src: url(/assets/fonts/Big\ Space.otf);
+    font-family: 'Big Space';
+}
+
+@media screen and (max-width: 1200px) {
+    section.home-container-6 {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 0.1fr 0.9fr;
+        grid-gap: 40px;
+    }
+
+    section.home-container-6 .cards-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+        place-items: center;
+    }
+
+    section.home-container-8 {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 0.1fr 0.9fr;
+        grid-gap: 10px;
+        align-content: start;
+        place-content: center;
+    }
+    
+    section.home-container-8 .blog-wrapper {
+        display: grid;
+        grid-template-columns: 0.3fr 0.35fr 0.35fr;
+        grid-gap: 20px;
+        place-items: center;
+        place-content: center;
+    }
+
+    section.home-container-4 {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 0.2fr 0.8fr;
+        grid-gap: 40px;
+    }
+    
+    section.home-container-4 .cards {
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr;
+        grid-gap: 20px;
+        place-items: center;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    section.home-container-8 .blog-wrapper {
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr;
+        grid-gap: 20px;
+        place-items: center;
+        place-content: center;
+    }
+
+    section.home-container-7 .newsletter-wrapper input {
+        padding: 15px 20px;
+        width: 250px;
+        font-size: 16px;
+        font-weight: 700;
+        color: #a9bad1;
+        background-color: #fff;
+        border: none;
+    }
+
+    section.home-container-6 .cards-2 {
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr;
+        grid-gap: 40px;
+        place-items: center;
+    }
+
+    section.home-container-10 {
+        height: auto;
+        width: 100%;
+        background-color: #e52b50;
+        display: grid;
+        grid-template-rows: 0.2fr 0.6fr 0.2fr;
+        grid-gap: 30px;
+        place-items: center;
+    }
+    
+    section.home-container-10 .companies {
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr;
+        grid-gap: 20px;
+        place-items: center;
+    }
+
+    section.home-container-1 header.header .header-group-1 li {
+        font-size: 14px;
+    }
+
+    section.home-container-1 header.header .header-group-2 li {
+        font-size: 14px;
+    }
+
+    section.home-container-1 main .main-post h1{
+        font-size: 42px;
+    }
+
+    section.home-container-1 main .main-post h2{
+        font-size: 32px;
+    }
+
+    section.home-container-1 main .main-post p{
+        font-size: 15px;
+    }
+
+    section.home-container-2 .box-header h2 {
+        font-size: 30px;
+    }
+
+    section.home-container-3 .box-2 .text-box-1 h3 {
+        font-size: 20px;
+    }
+
+    section.home-container-3 .box-2 .text-box-1 p {
+        font-size: 12px;
+        font-weight: 500;
+        width: 50ch;
+    }
+
+    section.home-container-3 {
+        background-color: #f2f2f2;
+        height: auto;
+        display: grid;
+        place-items: center;
+        align-content: center;
+        width: 100%;
+    }
+    
+    section.home-container-3 .box-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+        width: 100%;
+        background-color: #fff;
+        align-items: center;
+        border-radius: 20px;
+        grid-gap: 20px;
+    }
+
+    section.home-container-3 .box-2 .image-box-1 {
+        height: 300px;
+    }
+
+    section.home-container-3 .box-2 .image-box-1 img {
+        height: 300px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section.home-container-8 .blog-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        place-items: center;
+        place-content: center;
+    }
+    
+    section.home-container-5 .header-wrapper h4 {
+        font-size: 32px;
+    }
+
+    section.home-container-5 .header-wrapper h5 {
+        font-size: 22px;
+    }
+
+    section.home-container-5 .header-wrapper button {
+        font-size: 14px;
+    }
+
+    section.home-container-6 .cards-2 {
+        display: grid;
+        grid-template-rows: 0.25fr 0.25fr 0.25fr 0.25fr;
+        grid-gap: 20px;
+        place-items: center;
+    }
+
+    section.home-container-10 {
+        height: auto;
+        width: 100%;
+        background-color: #e52b50;
+        display: grid;
+        grid-template-rows: 0.2fr 0.6fr 0.2fr;
+        grid-gap: 30px;
+        place-items: center;
+    }
+    
+    section.home-container-10 .companies {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
+        place-items: center;
+    }
+
+    section.home-container-10 .companies .company span {
+        width: 40ch;
+        font-size: 14px;
+    }
+
+    section.home-container-10 .companies-header h3 {
+        font-size: 28px;
+    }
+
+    section.home-container-10 .offer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 25px;
+    }
+
+    section.home-container-10 .offer h4 {
+        font-size: 18px;
+        width: 35ch;
+    }
+
+    section.home-container-6 {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 0.1fr 0.9fr;
+        grid-gap: 50px;
+    }
+    
+    section.home-container-6 .cards-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        place-items: center;
+    }
+
+    section.home-container-6 .text-box-3 p {
+        font-size: 16px;
+        width: 40ch;
+    }
+
+    section.home-container-6 .text-box-3 h4 {
+        font-size: 22px;
+    }
+
+    section.home-container-8 {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 0.1fr 0.9fr;
+        grid-gap: 10px;
+        align-content: start;
+        place-content: center;
+    }
+    
+    section.home-container-8 .blog-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        place-items: center;
+        place-content: center;
+    }
+
+    section.home-container-8 .blog-wrapper .blog-article h5 {
+        font-size: 14px;
+        font-weight: 800;
+        width: 30ch;
+    }
+
+    section.home-container-4 {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 0.2fr 0.8fr;
+        grid-gap: 40px;
+    }
+    
+    section.home-container-4 .text-box-2 h4 {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    section.home-container-4 .text-box-2 p {
+        font-size: 18px;
+        font-weight: 700;
+        width: 40ch;
+    }
+
+    section.home-container-4 .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        place-items: center;
+    }
+
+    section.home-container-4 .cards .card {
+        display: grid;
+        grid-template-rows: 200px 0.1fr 0.1fr 0.1fr;
+        grid-gap: 10px;
+        place-items: center;
+        background-color: #e5e9ee;
+        box-shadow: -1px 5px 6px 14px rgba(0,0,0,0.23);
+        -webkit-box-shadow: -1px 5px 6px 14px rgba(0,0,0,0.23);
+        -moz-box-shadow: -1px 5px 6px 14px rgba(0,0,0,0.23);
+    }
+    
+    section.home-container-4 .cards .card img {
+        height: 200px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    section.home-container-1 main.main .main-post h1 {
+        display: grid;
+        place-self: center;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    section.home-container-1 main.main .main-post h2 {
+        display: grid;
+        place-self: center;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    section.home-container-1 main.main .main-post p {
+        display: grid;
+        place-self: center;
+        font-size: 18px;
+    }
+
+    section.home-container-1 main.main .main-post button {
+        display: grid;
+        place-self: center;
+        font-size: 14px;
+    }
+
+    section.home-container-7 .newsletter-search input {
+        width: 150px;
+    }
+
+    section.home-container-3 .image-box-1 img {
+        height: 100vh;
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    section.home-container-4 .text-box-2 p {
+        font-size: 15px;
+    }
+
+    section.home-container-6 .image-box-3 p {
+        font-size: 15px;
+    }
+
+    section.home-container-10 .companies-header h3 {
+        display: grid;
+        place-self: center;
+        font-size: 24px;
+    }
+
+    section.home-container-10 .companies .company span {
+        display: grid;
+        place-self: center;
+        font-size: 14px;
+    }
+
+    section.home-container-10 .companies .company span.company-span{
+        display: grid;
+        place-self: center;
+        font-size: 13px;
+    }
+
+    section.home-container-10 .offer h4 {
+        display: grid;
+        place-self: center;
+        font-size: 16px;
+    }
+}

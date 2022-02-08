@@ -1,0 +1,24 @@
+.back-to-top {
+    position: fixed;
+    background-color: #0d2335;
+    border: solid 1px #f1eaea50;
+    border-radius: 20px;
+    padding: 0.2rem 0.5rem;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    color: #35382e;
+    z-index: 1;
+    animation: scaling 2s infinite linear alternate;
+    font-family: sans-serif;
+    -webkit-animation: scaling 2s infinite linear alternate;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.back-to-top:hover {
+    background-color: #f5cf04;
+    color:  #ece5e1;
+    transition: 1s;
+}

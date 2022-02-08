@@ -1,0 +1,38 @@
+header.products-header-menu form.products-form-wrapper {
+    display: grid;
+    grid-template-columns: 0.3fr 0.6fr 0.1fr;
+    align-items: center;
+}
+
+header.products-header-menu form.products-form-wrapper input {
+    height: 50px;
+    outline: none;
+    border: none;
+    padding: 20px 40px;
+}
+
+header.products-header-menu form.products-form-wrapper button {
+    height: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #d40a0a;
+    border: none;
+    border-right: 3px solid #000;
+    outline: none;
+    cursor: pointer;
+    padding: 0px 10px;
+}
+
+header.products-header-menu form #special-button {
+    border-left: 3px solid #000;
+}
+
+header.products-header-menu form.products-form-wrapper button:hover {
+    color: #d40a0a;
+    background-color: #f1f1f1;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}

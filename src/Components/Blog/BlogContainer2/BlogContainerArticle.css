@@ -1,0 +1,118 @@
+section.blog-container-2 .blog-wrapper .row .blog-post {
+    display: grid;
+    grid-template: 
+    "date-box img h3" 0.2fr
+    "date-box img span-box " 0.1fr
+    "icon-box img p" 0.6fr
+    "icon-box img a" 0.1fr /
+    0.1fr 0.4fr 0.5fr;
+    justify-items: start;
+    justify-content: start;
+    grid-gap: 15px;
+}
+
+section.blog-container-2 .blog-wrapper .row .blog-post .date-box {
+    grid-area: date-box;
+    background-color: #e52b50;
+    padding: 8px 30px;
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-gap: 5px;
+}
+
+section.blog-container-2 button {
+    font-size: 18px;
+    padding: 15px 50px;
+    width: 30%;
+    background-color: #2b72e4;
+    color: #ece5e1;
+    cursor: pointer;
+    display: grid;
+    place-self: center;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+section.blog-container-2 button:hover {
+    background-color: #e52b50;
+    color: #080808;
+    transition: 1s;
+}
+
+section.blog-container-2 .blog-wrapper .row .blog-post .date-box span {
+    font-size: 16px;
+    color: #060208;
+}
+
+section.blog-container-2 .blog-wrapper .row .blog-post .icon-box {
+    grid-area: icon-box;
+    background-color: #3d2ae6;
+    display: grid;
+    place-items: center;
+    height: 60px;
+    padding: 0 40px;
+}
+
+section.blog-container-2 .blog-wrapper .row .blog-post .icon-box i {
+    font-size: 24px;
+    color: #fff;
+}
+
+section.blog-container-2 .blog-wrapper .row .blog-post .span-box {
+    grid-area: span-box;
+    grid-template-columns: 0.33fr 0.33fr 0.33fr;
+    grid-gap: 20px;
+}
+
+section.blog-container-2 .blog-wrapper .row .blog-post .span-box span {
+    font-size: 14px;
+    color: #679ce6;
+}
+
+section.blog-container-2 .blog-wrapper .row .blog-post img {
+    grid-area: img;
+    height: 200px;
+    width: 300px;
+}
+
+section.blog-container-2 .blog-wrapper .row .blog-post img:hover {
+    opacity: 0.5;
+    transition: 1s;
+}
+
+section.blog-container-2 .blog-wrapper .row .blog-post h3 {
+    grid-area: h3;
+    font-size: 26px;
+    letter-spacing: normal;
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+section.blog-container-2 .blog-wrapper .row .blog-post .span-3 {
+    grid-area: span-3;
+}
+
+section.blog-container-2 .blog-wrapper .row .blog-post .span-2 {
+    grid-area: span-2;
+}
+
+section.blog-container-2 .blog-wrapper .row .blog-post .span-1 {
+    grid-area: span-1;
+}
+
+section.blog-container-2 .blog-wrapper .row .blog-post p {
+    grid-area: p;
+    width: 75ch;
+    font-size: 18px;
+    letter-spacing: normal;
+    font-weight: normal;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+section.blog-container-2 .blog-wrapper .row .blog-post a {
+    grid-area: a;
+    color: #e52b50;
+    display: grid;
+    place-self: end;
+}

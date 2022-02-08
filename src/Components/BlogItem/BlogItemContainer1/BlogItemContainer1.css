@@ -1,0 +1,113 @@
+/*Here layouts start */
+section.blog-item-container-1 {
+    height: auto;
+    width: auto;
+    display: grid;
+    grid-template: 
+    "header" 70px
+    "ribbon-blog" 50px
+    "main" auto /
+    1fr;
+}
+
+section.blog-item-container-1 main.main {
+    grid-area: main;
+    display: grid;
+    grid-template-rows: 0.9fr 0.1fr;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+section.blog-item-container-1 main.main .main-post {
+    display: grid;
+    grid-template-rows: 0.8fr auto;
+    grid-gap: 70px;
+}
+
+section.blog-item-container-1 main.main .main-post .image-box {
+    display: grid;
+    place-content: center;
+    place-items: center;
+}
+
+section.blog-item-container-1 main.main .main-post .text {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 20px;
+    padding-bottom: 50px;
+}
+
+section.blog-item-container-1 main.main .main-post .text h3 {
+    font-size: 22px;
+    font-weight: 800;
+    font-family: monospace;
+    line-height: 36px;
+}
+
+section.blog-item-container-1 main.main .main-post .text p {
+    width: 100ch;
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 24px;
+    white-space: pre-line;  
+    vertical-align: bottom;
+}
+
+section.blog-item-container-1 main.main .main-bottom-ribbon {
+    display: grid;
+    grid-template-columns: 80px 100px 200px;
+    grid-gap: 5px;
+    align-content: center;
+    align-items: center;
+    justify-content: start;
+    justify-items: start;
+    border-bottom: 1px solid #2b72e4;
+    padding: 10px 0;
+    border-top: 1px solid #2b72e4;
+    background-color: #f6f6f6;
+}
+
+
+section.blog-item-container-1 main.main .main-bottom-ribbon a {
+    font-size: 14px;
+    color: #2b72e4;
+    font-weight: normal;
+}
+
+section.blog-item-container-1 .ribbon-blog {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-gap: 30px;
+    background-color: #f6f6f6;
+    width: auto;
+    grid-area: ribbon-blog;
+}
+
+section.blog-item-container-1 .ribbon-blog .ribbon-1 {
+    display: grid;
+    justify-content: start;
+    align-content: center;
+    padding-left: 30px;
+}
+
+section.blog-item-container-1 .ribbon-blog .ribbon-2 {
+    display: grid;
+    grid-template-columns: 40px 10px 250px;
+    grid-gap: 5px;
+    justify-content: end;
+    align-content: center;
+    padding-right: 30px;
+}
+
+section.blog-item-container-1 .ribbon-blog .ribbon-1 h3 {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: monospace;
+}
+
+section.blog-item-container-1 .ribbon-blog a {
+    color: #060208;
+}

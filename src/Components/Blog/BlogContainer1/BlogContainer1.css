@@ -1,0 +1,79 @@
+/*Here layouts start */
+section.blog-container-1 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(/assets/images/main/1DA_REDESIGN_HOMEPAGE_FEB17_BANNER-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    grid-template: 
+    "header" 70px
+    "main" 1fr /
+    1fr;
+}
+
+section.blog-container-1 header.header {
+    grid-area: header;
+}
+
+section.blog-container-1 main.main {
+    grid-area: main;
+    display: grid;
+    place-items: center;
+}
+
+section.blog-container-1 main.main .main-post {
+    display: grid;
+    place-items: center;
+    grid-gap: 5px;
+}
+
+section.blog-container-1 main.main .main-post h1 {
+    font-size: 65px;
+    letter-spacing: normal;
+    font-weight: 800;
+    font-family: sans-serif;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+section.blog-container-1 main.main .main-post h2 {
+    font-size: 65px;
+    letter-spacing: normal;
+    font-weight: 800;
+    font-family: sans-serif;
+    color: #ffa800;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+
+section.blog-container-1 main.main .main-post p {
+    font-size: 18px;
+    letter-spacing: normal;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: #fff;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+}
+
+section.blog-container-1 main.main .main-post button {
+    padding: 15px 15px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: #ffa500;
+    color: #fff;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 700;
+    letter-spacing: normal;
+}
+
+section.blog-container-1 main.main .main-post button:hover {
+    background-color: #cacaca;
+    color: #111111;
+    transition: 1s;
+    cursor: pointer;
+}

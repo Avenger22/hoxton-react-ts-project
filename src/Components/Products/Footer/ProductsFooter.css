@@ -1,0 +1,19 @@
+/* #region 'FOOTER-MENU' */
+footer.footer-menu {
+    display: grid;
+    grid-template-rows: 1fr;
+    place-items: center;
+}
+
+.footer-menu span {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: hsl(0, 0%, 95%);
+}
+
+footer.footer-menu {
+    background-color: #0d2335;
+    margin-top: -50px;
+}
+/* #endregion */

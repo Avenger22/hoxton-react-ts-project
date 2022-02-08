@@ -1,0 +1,70 @@
+/* #region 'ABOUT-US-MODAL' */
+.modal-about_us-container {
+    height: 100vh;
+    width: 100%;
+    pointer-events: none;
+    position: fixed;
+    display: none;
+    z-index: 1;
+}
+
+.modal-about_us-container.show {
+    pointer-events: auto;
+    display: grid;
+    grid-template-rows: 1fr;
+    place-items: center;
+    place-content: center;
+    opacity: 1;
+    background-color: rgba(230, 90, 50, 0.3);
+}
+
+.modal-about-us {
+    display: grid;
+    grid-template-rows: 200px 100px;
+    grid-gap: 35px;
+
+    background-color: #f1f1f6;
+    height: 550px;
+    width: 650px;
+
+    place-content: center;
+    place-items: center;
+    position: relative;
+}
+
+.remove-about{
+    position: absolute;
+    top:0;
+    right: 0;
+    padding: 0.2rem;
+    color: #fff;
+    background-color: #d40a0a;
+    outline: none;
+    border: none;
+}
+
+.modal-about-us .wrapper-subs {
+    display: grid;
+    grid-template-rows: 1fr;
+    place-items: center;
+    grid-gap: 20px;
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-family: sans-serif;
+    line-height: 22px;
+}
+
+.modal-about-us .wrapper-subs p {
+    font-size: 16px;
+    font-weight: 700;
+    width: 60ch;
+}
+
+.modal-about-us .wrapper-subs span {
+    font-size: 26px;
+    font-weight: 900;
+    padding-bottom: 50px;
+    color: #d40a0a;
+}
+/* #endregion /*

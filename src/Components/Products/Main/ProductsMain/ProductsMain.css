@@ -1,0 +1,44 @@
+section.container-menus main.main-menu {
+    display:grid;
+    grid-template: 
+    'main-ribbon-1 main-ribbon-1' 40px
+    'main-ribbon-2 aside-wrapper' 60px
+    'items-container aside-wrapper' 0.80fr
+    'pagination-container aside-wrapper' 150px /
+    0.80fr 0.2fr;
+    grid-gap: 30px;
+}
+
+section.container-menus .items-container {
+    display: grid;
+    grid-area: items-container;
+    align-items: center;
+    align-content: center;
+    padding-left: 30px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+section.container-menus .store-items-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 0.25fr);
+    grid-gap: 100px 35px;
+    align-items: center;
+    align-content: center;
+}
+
+section.container-menus .main-ribbon-1 {
+    grid-area: main-ribbon-1;
+}
+
+section.container-menus .main-ribbon-2 {
+    grid-area: main-ribbon-2;
+}
+
+section.container-menus .aside-wrapper {
+    grid-area: aside-wrapper;
+}
+
+section.container-menus .pagination-container {
+    grid-area: pagination-container;
+}

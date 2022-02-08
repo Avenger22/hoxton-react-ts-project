@@ -1,0 +1,102 @@
+/* Basket */
+.favorites-container {
+    width: 50vw;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  .fav-menus-wrapper {
+    display: grid;
+    grid-template-rows: 160px 0.95fr 120px;
+    height: auto;
+    grid-gap: 30px;
+  }
+  
+  .favorites-container > h2 {
+    margin: 2rem 0;
+    font-size: 2.5rem;
+  }
+  
+  .favorites-container > ul {
+    border: 1px solid gray;
+    border-radius: 5px;
+    height: 60vh;
+    padding: 2rem;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    background-color: white;
+  }
+  
+  .favorites-container li {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-top: 1px solid gray;
+  }
+  
+  .favorites-container li:last-of-type {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid gray;
+  }
+  
+  .favorites-container h3 {
+    margin-top: 2rem;
+    margin-right: 2rem;
+    text-align: right;
+  }
+  
+  .favorites-container__item select {
+    border: none;
+    padding: 10px 10px;
+    color: #1b1818;
+    background-color: #d65050;
+  }
+
+  .favorites-container__item {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 50px 100px 120px 120px 120px;
+    grid-gap: 10px;
+  }
+
+  .favorites-container__item button {
+    font-size: 14px;
+    color: rgb(15, 14, 14);
+    background-color: rgb(235, 54, 54);
+    padding: 5px 25px;
+    border: none;
+    font-weight: 600;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    cursor: pointer;
+    /* margin-right: 70px; */
+}
+
+/* .favorites-container button {
+  padding: 15px 20px;
+  border: none;
+  color: rgb(240, 218, 218);
+  background-color: rgb(214, 87, 28);
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  cursor: pointer;
+  /* margin-left: 200px; */
+
+.favorites-container i {
+  color: #d65050;
+  font-size: 20px;
+}
+
+.favorites-container__item p {
+  font-size: 14px;
+  font-weight: 600;
+}

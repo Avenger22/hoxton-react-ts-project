@@ -1,0 +1,53 @@
+section.home-container-5 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(/assets/images/main/background1\ .jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-rows: 1fr;
+    place-items: center;
+}
+
+section.home-container-5 .header-wrapper {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    place-items: center;
+}
+
+section.home-container-5 .header-wrapper h4 {
+    font-size: 46px;
+    font-weight: 800;
+    letter-spacing: normal;
+    font-family: sans-serif;
+    color: #ffa800;
+}
+
+section.home-container-5 .header-wrapper h5 {
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: normal;
+    font-family: sans-serif;
+    color: #ffa800;
+}
+
+section.home-container-5 .header-wrapper button {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: normal;
+    font-family: sans-serif;
+    padding: 15px 50px;
+    color: #f2f2f2;
+    background-color: #ffa500;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 5px solid #b1b8c2;
+}
+
+section.home-container-5 .header-wrapper button:hover {
+    background-color: #b1b8c2;
+    color: #000;
+    transition: 1s;
+}

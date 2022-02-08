@@ -1,0 +1,31 @@
+section.about-container-2 {
+    height: auto;
+    width: 100%;
+
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+section.about-container-2 .about-wrapper {
+    display: grid;
+    grid-template-rows: 0.1fr 0.9fr;
+    grid-gap: 15px;
+    place-items: center;
+    place-content: center;
+}
+
+section.about-container-2 p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    width: 95ch;
+    color: rgb(26, 24, 24);
+}
+
+section.about-container-2 h2 {
+    font-size: 28px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #b62226;
+}

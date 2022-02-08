@@ -1,0 +1,53 @@
+section.blog-container-2 {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 70px 0.8fr;
+    grid-gap: 30px;
+}
+
+section.blog-container-2 .ribbon-blog {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-gap: 30px;
+    background-color: #cacaca;
+    width: auto;
+}
+
+section.blog-container-2 .ribbon-blog .ribbon-1 {
+    display: grid;
+    justify-content: start;
+    align-content: center;
+    padding-left: 30px;
+}
+
+section.blog-container-2 .ribbon-blog .ribbon-2 {
+    display: grid;
+    grid-template-columns: 40px 10px 40px;
+    grid-gap: 5px;
+    justify-content: end;
+    align-content: center;
+    padding-right: 30px;
+}
+
+section.blog-item-container-2 .ribbon-blog a {
+    color: #060208;
+}
+
+section.blog-container-2 .blog-wrapper {
+    display: grid;
+    grid-template-rows: 1fr;
+    align-content: start;
+    grid-gap: 50px;
+    margin-bottom: 30px;
+}
+
+section.blog-container-2 .blog-wrapper .row {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: start;
+    align-content: start;
+    justify-items: start;
+    justify-content: start;
+    padding-left: 30px;
+}

@@ -1,0 +1,24 @@
+section.service-bio-wrapper {
+    height: auto;
+    width: 100%;
+
+    display: grid;
+    grid-template-rows: 0.9fr 0.1fr;
+    grid-gap: 25px;
+
+    place-items: center;
+    place-content: center;
+}
+
+section.service-bio-wrapper img {
+    height: 700px;
+    width: 850px;
+}
+
+section.service-bio-wrapper .img-box {
+    padding-top: 100px;
+}
+
+section.service-bio-wrapper span {
+    font-size: 18px;
+}

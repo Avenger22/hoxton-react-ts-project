@@ -1,0 +1,14 @@
+header.products-header-menu .ul-products-sub-2 li {
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+header.products-header-menu .ul-products-sub-2 li a:hover {
+    color: #d40a0a;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}

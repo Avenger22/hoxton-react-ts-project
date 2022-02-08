@@ -1,0 +1,57 @@
+/* #region 'SIGN-UP-MODAL' */
+.modal-sign_up-container {
+    height: 100vh;
+    width: 100%;
+    pointer-events: none;
+    position: fixed;
+    display: none;
+    z-index: 1;
+}
+
+.modal-sign_up-container.show {
+    pointer-events: auto;
+    display: grid;
+    grid-template-rows: 1fr;
+    place-items: center;
+    place-content: center;
+    opacity: 1;
+    background-color: rgba(230, 90, 50, 0.3);
+}
+
+.modal-sign_up {
+    display: grid;
+    grid-template-rows: 0.1fr 0.5fr 30px;
+    grid-gap: 10px;
+    background-color: #f1f1f6;
+    height: 450px;
+    width: 500px;
+    place-content: center;
+    place-items: center;
+    padding-top: 100px;
+}
+
+.modal-sign_up form {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-gap: 20px;
+    place-items: center;
+    place-content: center;
+}
+
+.modal-sign_up form input {
+    height: 30px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.modal-sign_up form label {
+    font-size: 16px;
+}
+
+.modal-sign_up form button {
+    padding: 10px 10px;
+    border: none;
+    background-color: #d40a0a;
+}
+/* #endregion */

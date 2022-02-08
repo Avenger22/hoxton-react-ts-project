@@ -1,0 +1,96 @@
+section.contact-container-3 {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 0.1fr 0.9fr;
+    grid-gap: 10px;
+    background-color: #dfe5ee;
+}
+
+section.contact-container-3 .contact-group-1 {
+    display: grid;
+    place-content: center;
+}
+
+section.contact-container-3 .contact-group-1 h2 {
+    font-size: 36px;
+    color: #e52b50;
+    font-weight: 700;
+    letter-spacing: normal;
+    padding-top: 30px;
+    border-bottom: 3px solid #e52b50;
+}
+
+section.contact-container-3 .contact-group-2 {
+    display: grid;
+    place-content: center;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-gap: 15px;
+}
+
+section.contact-container-3 .contact-group-2 .form-group-1 {
+    display: grid;
+    place-content: center;
+    grid-template-rows: repeat(4, 0.2fr);
+    grid-gap: 10px;
+}
+
+section.contact-container-3 .contact-group-2 .form-group-2 {
+    display: grid;
+    place-content: center;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.5fr 0.1fr;
+    grid-gap: 10px;
+}
+
+section.contact-container-3 .contact-group-2 .form-group-2 input {
+    padding: 15px 10px;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    outline: none;
+}
+
+section.contact-container-3 .contact-group-2 .form-group-2 button {
+    padding: 15px 10px;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    background-color: #e52b50;
+    border-radius: 20px;
+    width: 50%;
+    display: grid;
+    place-self: center;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+section.contact-container-3 .contact-group-2 .form-group-2 button:hover {
+    background-color: #ffa500;
+    color: #fff;
+    transition: 1s;
+}
+
+section.contact-container-3 .contact-group-2 .form-group-2 textarea {
+    resize: none;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    padding-left: 10px;
+    outline: none;
+}
+
+section.contact-container-3 .contact-group-2 .form-group-1 h3 {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: normal;
+    color: #00AAFF;
+}
+
+section.contact-container-3 .contact-group-2 .form-group-1 span {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: normal;
+}

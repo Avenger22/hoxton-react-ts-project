@@ -1,0 +1,104 @@
+/* #region 'PAY-MODAL' */
+.modal-pay-container {
+    height: 100vh;
+    width: 100%;
+    pointer-events: none;
+    position: fixed;
+    display: none;
+    z-index: 1;
+}
+
+.modal-pay-container.show {
+    pointer-events: auto;
+    display: grid;
+    grid-template-rows: 1fr;
+    place-items: center;
+    opacity: 1;
+    background-color: rgba(230, 90, 50, 0.3);
+}
+
+.modal-pay {
+    display: grid;
+    grid-template-rows: 1fr;
+    place-items: center;
+
+    background-color: #f1f1f6;
+    height: 550px;
+    width: 750px;
+    place-content: center;
+}
+
+.modal-pay form.form-pay {
+    display: grid;
+    grid-template: 
+    "h4-pay h4-pay" 0.15fr
+    "span-pay span-pay" 0.15fr
+    "input-pay-1 input-pay-1" 0.15fr
+    "input-pay-2 input-pay-2" 0.15fr
+    "input-pay-3 input-pay-4" 0.15fr
+    "btn-group btn-group" 0.25fr /
+    0.5fr 0.5fr;
+    grid-gap: 30px;
+    align-items: center;
+    align-content: center;
+
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.modal-pay form.form-pay h4 {
+    grid-area: h4-pay;
+    font-size: 24px;
+}
+
+.modal-pay form.form-pay span {
+    grid-area: span-pay;
+    font-size: 18px;
+}
+
+.modal-pay form.form-pay input {
+    height: 30px;
+    border: 1px solid #c22048;
+    background-color: #f1f1f1;
+    padding-left: 10px;
+}
+
+.modal-pay form.form-pay #input-pay-1 {
+    grid-area: input-pay-1;
+}
+
+.modal-pay form.form-pay #input-pay-2 {
+    grid-area: input-pay-2;
+}
+
+.modal-pay form.form-pay #input-pay-3 {
+    grid-area: input-pay-3;
+}
+
+.modal-pay form.form-pay #input-pay-4 {
+    grid-area: input-pay-4;
+}
+
+.modal-pay form.form-pay #button-pay-1 {
+    grid-area: button-pay-1;
+    padding: 15px 15px;
+    border: none;
+    background-color: #d40a0a;
+}
+
+.modal-pay form.form-pay #button-pay-2 {
+    grid-area: button-pay-2;
+    padding: 5px 5px;
+    border: none;
+    background-color: #d40a0a;
+    margin-left: 50px;
+}
+
+.modal-pay form.form-pay .btn-pay-wrapper {
+    grid-area: btn-group;
+    /* display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-gap: 20px; */
+
+}
+/* #endregion */

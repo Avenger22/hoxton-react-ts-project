@@ -1,0 +1,102 @@
+/* Test overlay */
+label.close-button {
+    padding: 0.5rem 0.7rem;
+    cursor: pointer;
+    border-radius: 50%;
+    visibility: hidden;
+    position: fixed;
+    font-weight: 900;
+    background-color: #e52b50;
+    top: 195px;
+    left: 50%;
+    display: grid;
+    place-items: center;
+    z-index: 10;
+    animation: check 1s 10s forwards;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#over:checked label.close-button{
+    display: none;
+}
+
+#over {
+    visibility: hidden;
+    position: fixed;
+}
+
+@keyframes check {
+    100%{visibility: visible;}
+}
+
+#over:checked + .box-modal, #over:checked ~ label{
+    display: none;
+}
+
+#over:checked {
+    display: none;
+}
+
+.box-modal h2 {
+    display: grid;
+    place-self: center;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.box-modal input#input-modal {
+    font-size: 1rem;
+    padding: 0.7rem 0.5rem;
+    width: 350px;
+}
+
+.box-modal button#button-modal {
+    padding: 0.7rem 0.5rem;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: #e52b50;
+    border-radius: 30px;
+    cursor: pointer;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.box-modal {
+    width: 60%;
+    display: grid;
+    place-content: center;
+    height: 350px;
+    position: fixed;
+    top: 250px;
+    background-color: #ffa500;
+    z-index: -5;
+    visibility: hidden;
+    gap: 1rem;
+    left: 20%;
+    animation: overlay 1s 10s 1 forwards linear;
+}
+
+.background {
+    background-color: #35382e;
+    width: 100vw;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    animation: background1 1s 10s 1 forwards linear;
+    position: fixed;
+    height: 100vh;
+}
+
+@keyframes background1 {
+    100%{z-index: 5;backdrop-filter: blur(10px); background-color: rgba(0, 0, 0, 0.452);}
+}
+
+@keyframes overlay {
+    100%{z-index: 6;visibility: visible; background-color: #ea755b;}
+}

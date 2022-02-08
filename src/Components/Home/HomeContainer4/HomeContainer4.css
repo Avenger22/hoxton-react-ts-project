@@ -1,0 +1,140 @@
+section.home-container-4 {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 0.1fr 0.8fr 0.1fr;
+    grid-gap: 30px;
+    background-image: url(/assets/images/main/testimonial-bg-fullwidth.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section.home-container-4 .cards {
+    display: grid;
+    grid-template-columns: 0.33fr 0.33fr 0.33fr;
+    grid-gap: 20px;
+    place-items: center;
+}
+
+section.home-container-4 .cards .card {
+    display: grid;
+    grid-template-rows: 250px 30px 30px 50px;
+    grid-gap: 20px;
+    place-items: center;
+    background-color: #e3e7eb;
+    height: auto;
+    border-radius: 20px;
+}
+
+section.home-container-4 .cards .card:hover {
+    transition: 1s;
+    box-shadow: -1px 5px 6px 8px rgba(0,0,0,0.23);
+    -webkit-box-shadow: -1px 5px 6px 8px rgba(0,0,0,0.23);
+    -moz-box-shadow: -1px 5px 6px 8px rgba(0,0,0,0.23);
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+section.home-container-4 .cards .card img{
+    height: 250px;
+    width: 300px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+section.home-container-4 .text-box-2 {
+    display: grid;
+    place-items: center;
+    grid-gap: 10px;
+    padding-top: 30px;
+}
+
+section.home-container-4 .text-box-2 h4 {
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: normal;
+    font-family: "icofont";
+    color: #ffa800;
+}
+
+section.home-container-4 .text-box-2 p {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: normal;
+    font-family: sans-serif;
+    color: #fff;
+    letter-spacing: normal;
+}
+
+section.home-container-4 .card h5 {
+    font-size: 22px;
+    font-weight: 700;
+    font-family: "icofont";
+}
+
+section.home-container-4 .card p {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: sans-serif;
+    width: 45ch;
+    padding: 0px 120px;
+    display: grid;
+    place-self: center;
+}
+
+section.home-container-4 .cards .card img:hover {
+    opacity: 0.5;
+    transition: 1s;
+}
+
+section.home-container-4 .card button {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: normal;
+    font-family: sans-serif;
+    padding: 10px 20px;
+    color: #f2f2f2;
+    background-color: #ffa500;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #b1b8c2;
+}
+
+section.home-container-4 .card button:hover {
+    color: #37393b;
+    background-color: #e3e7eb;
+}
+
+section.home-container-4 .btn-all-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    place-content: center;
+
+    padding-bottom: 40px;
+}
+
+section.home-container-4 .all-services-btn {
+    font-size: 14px;
+    color: #fff;
+    background-color: #679ce6;
+    padding: 15px 25px;
+    border: none;
+    cursor: pointer;
+
+    display: grid;
+    place-self: center;
+}
+
+section.home-container-4 .all-services-btn:hover {
+    color: #1f2c3f;
+    background-color: #d6c981;
+}
