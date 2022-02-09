@@ -1,6 +1,6 @@
 import create from 'zustand'
 import AppStoreState from '../types/interfaceStore'
-import {Item, User, Coach, Company, Service, Article} from "../types/typesStore"
+import {Item, User, Coach, Company, Service, Article, FormType, TextAreaType} from "../types/typesStore"
 
 // #region 'Zustand STATE MANAGEMENT STORE'
 export const useStore = create<AppStoreState>((set, get):AppStoreState => ({
@@ -116,8 +116,8 @@ export const useStore = create<AppStoreState>((set, get):AppStoreState => ({
   },
 
   handleFormNewsletter: function (e) {    
-    const valueForm = e.target.newsLetter.value
-    set({newsLetterEmail: valueForm})
+    const inputEl = e.target as FormType
+    set({newsLetterEmail: inputEl.newsLetter.value})
   },
 
   setSignInStatus: function () {
@@ -292,7 +292,8 @@ export const useStore = create<AppStoreState>((set, get):AppStoreState => ({
 
   // #region 'Functions for Contact us State'
   handleTextAreaChange: function (e) {
-    set({textArea: e.target.value})
+    const textAreaEl = e.target.textareaContact as TextAreaType
+    set({textArea: textAreaEl.value})
   },
 
   handleNameChange: function (e) {
@@ -315,7 +316,9 @@ export const useStore = create<AppStoreState>((set, get):AppStoreState => ({
 
     const {phoneContactUs, emailContactUs, subjectContactUs, textAreaContactUs, nameContactUs, formContactUs} = get()
     
-    const array = [
+    const formEl = e.target as FormType
+
+    const array: {email: string, subject: string, textArea: string, fullName: string, phone: string}[]  = [
         {
             email: emailContactUs, 
             subject: subjectContactUs,
@@ -325,9 +328,9 @@ export const useStore = create<AppStoreState>((set, get):AppStoreState => ({
         }
     ]
 
-    const newArray = [...formContactUs, array]
+    const newArray: {email: string, subject: string, textArea: string, fullName: string, phone: string}[] = [...formContactUs, array]
 
-    e.target.reset()
+    formEl.reset()
     set({formContactUs: newArray})
 
   },
@@ -360,8 +363,10 @@ export const useStore = create<AppStoreState>((set, get):AppStoreState => ({
   handleFormSubmitSignIn: function (e) {
     
     const {getUser, signInStatus, signInUserName, userNameSignIn, passwordSignIn} = get()
-    
     const gettingUser: User | undefined = getUser(userNameSignIn, passwordSignIn)
+    const formEl = e.target as FormType
+
+    e.preventDefault();
 
     if(gettingUser) {
 
@@ -379,7 +384,7 @@ export const useStore = create<AppStoreState>((set, get):AppStoreState => ({
       set({signInStatus: true})
       set({signInUserName: gettingUser.userName})
       
-      e.target.reset()
+      formEl.reset()
 
     }
 
@@ -423,6 +428,9 @@ export const useStore = create<AppStoreState>((set, get):AppStoreState => ({
     const {emailSignUp, passwordSignUp, 
       userNameSignUp, fullNameSignUp, users, signUpStatus} = get()
     
+    const formEl = e.target as FormType
+    formEl.preventDefault()
+
     const object = {
         email: emailSignUp, 
         password: passwordSignUp,
@@ -451,7 +459,7 @@ export const useStore = create<AppStoreState>((set, get):AppStoreState => ({
 
     set({signUpStatus: !signUpStatus})
 
-    e.target.reset()
+    formEl.reset()
 
   },
   // #endregion

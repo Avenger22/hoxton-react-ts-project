@@ -5,4 +5,19 @@ export type Company = {id: number, name: string, desc: string, image: string}
 export type Article = {id: number, image: string, title: string, desc: string, user: string, category: string, date: string, paragraph: string, header1: string}
 export type Coach = {id: number, image: string, title: string, desc: string, user: string, category: string, date: string, paragraph: string, header1: string}
 export type Service = {id: number, image: string, name: string, desc: string}
+export type FormType = HTMLFormElement & {
+    text: HTMLInputElement 
+    newsLetter: HTMLInputElement 
+    value: string
+    reset: () => void
+}
+export type TextAreaType = HTMLTextAreaElement & {
+    target: {
+
+        textareaContact: {
+          value: string
+        }
+        
+    }
+}
 // #endregion

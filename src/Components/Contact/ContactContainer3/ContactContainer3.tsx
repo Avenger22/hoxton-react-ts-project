@@ -1,4 +1,3 @@
-import {  } from "react/cjs/react.development"
 import { useStore } from "../../../Store/store"
 import "../ContactContainer3/ContactContainer3.css"
 
@@ -52,7 +51,7 @@ export default function ContactContainer3() {
                             handlePhoneChange(e)
                         }}/>
                         
-                        <textarea defaultValue = {textAreaContactUs} name="textarea-contact" id="" cols={50} rows={20} placeholder="How can we help ?" onChange={function (e) {
+                        <textarea defaultValue = {textAreaContactUs} name="textareaContact" id="" cols={50} rows={20} placeholder="How can we help ?" onChange={function (e) {
                             e.preventDefault()
                             handleTextAreaChange(e)
                         }}></textarea>

@@ -16,6 +16,7 @@ export default interface AppStoreState {
     signInData: User[]
     signInUserName: string
     signUpStatus: boolean
+    signUpData: []
   
     paymentStatus: boolean
     paymentData: object[]
@@ -32,6 +33,7 @@ export default interface AppStoreState {
     searchOnCategory: string
   
     selectedModal: string
+    formContactUs: {email: string, subject: string, textArea: string, fullName: string, phone: string}[]
     // #endregion
   
     // #region 'General state functions types'
@@ -68,7 +70,7 @@ export default interface AppStoreState {
     // #endregion
   
     // #region Contact functions general types'
-    handleTextAreaChange: (e: React.ChangeEvent<HTMLInputElement>) => void
+    handleTextAreaChange: (e: React.ChangeEvent<HTMLTextAreaElement>) => void
     handleNameChange: (e: React.ChangeEvent<HTMLInputElement>) => void
     handleEmailChange: (e: React.ChangeEvent<HTMLInputElement>) => void
     handleSubjectChange: (e:React.ChangeEvent<HTMLInputElement>) => void
