@@ -4,12 +4,12 @@ import React from 'react'
 // #region 'TypeScript Feature interface etc'
 
 // #region 'General Types custom ones'
-type Items = {id: number, name: string, price: string, stock: number, type: string, date: string, quantity: number, description: string, favorite: boolean}[]
-type Users = {id: number, fullName: string, password: string, email: string, userName: string, signedIn: boolean}[]
-type Companies = {id: number, name: string, desc: string, image: string}[]
-type Articles = {id: number, image: string, title: string, desc: string, user: string, category: string, date: string, paragraph: string, header1: string}[]
-type Coaches = {id: number, image: string, title: string, desc: string, user: string, category: string, date: string, paragraph: string, header1: string}[]
-type Services = {id: number, image: string, name: string, desc: string}[]
+type Item = {id: number, name: string, price: string, stock: number, type: string, date: string, quantity: number, description: string, favorite: boolean}
+type User = {id: number, fullName: string, password: string, email: string, userName: string, signedIn: boolean}
+type Company = {id: number, name: string, desc: string, image: string}
+type Article = {id: number, image: string, title: string, desc: string, user: string, category: string, date: string, paragraph: string, header1: string}
+type Coach = {id: number, image: string, title: string, desc: string, user: string, category: string, date: string, paragraph: string, header1: string}
+type Service = {id: number, image: string, name: string, desc: string}
 // #endregion
 
 interface AppStoreState {
@@ -17,14 +17,14 @@ interface AppStoreState {
   // #region 'General TYPES'
 
   // #region 'General State types'
-  items : Items
-  initialItems: Items
-  users: Users
-  companies: Companies
+  items : Item[]
+  initialItems: Item[]
+  users: User[]
+  companies: Company[]
 
   newsLetterEmail: string
   signInStatus: boolean
-  signInData: object[]
+  signInData: User[]
   signInUserName: string
   signUpStatus: boolean
 
@@ -34,7 +34,7 @@ interface AppStoreState {
   favoriteClickSpan: number
   bagClickSpan: number
 
-  userCatcher: object[]
+  userCatcher: User[]
   userName: string
 
   selectType: string
@@ -46,7 +46,7 @@ interface AppStoreState {
   // #endregion
 
   // #region 'General state functions types'
-  handleButtonAddBasket: (product: Items) => void
+  handleButtonAddBasket: (product: Item) => void
   handleOnSubmitForm: (formValue: string) => void
   handleOnChangeSearchSelect: (e: React.ChangeEvent<HTMLInputElement>) => void
   handleOnChangeSearchTerm: (e: React.ChangeEvent<HTMLInputElement>) => void
@@ -56,14 +56,14 @@ interface AppStoreState {
   handleSignInStatus: () => void
   handleFormNewsletter: (e: React.FormEvent<HTMLInputElement>) => void
   setSignInStatus: () => void
-  handleButtonRemoveBasket: (product: Items) => void
-  handleButtonRemoveFavorite: (product: Items) => void
-  handleButtonAddFavorite: (product: Items) => void
-  handleButtonAddBagRemoveFavorite: (product: Items) => void
-  setUsers: (array: Items[]) => void
-  setItems: (array: Items[]) => void 
-  setInitialItems: (array: Items[]) => void
-  handleOnChangeBasketSelect: (value: string, objectBasket: Items) => void
+  handleButtonRemoveBasket: (product: Item) => void
+  handleButtonRemoveFavorite: (product: Item) => void
+  handleButtonAddFavorite: (product: Item) => void
+  handleButtonAddBagRemoveFavorite: (product: Item) => void
+  setUsers: (array: User[]) => void
+  setItems: (array: Item[]) => void 
+  setInitialItems: (array: Item[]) => void
+  handleOnChangeBasketSelect: (value: string, objectBasket: Item) => void
   // #endregion
   
   // #endregion
@@ -97,7 +97,7 @@ interface AppStoreState {
   // #endregion
 
   // #region 'Sign-in functions general types'
-  getUser: (userNameParam: string, passwordParam: string) => object
+  getUser: (userNameParam: string, passwordParam: string) => User | undefined
   handleUserNameChangeSignIn: (e: React.ChangeEvent<HTMLInputElement>) => void
   handlePasswordChangeSignIn: (e: React.ChangeEvent<HTMLInputElement>) => void
   handleFormSubmitSignIn: (e: React.FormEvent<HTMLInputElement>) => void
@@ -146,8 +146,8 @@ interface AppStoreState {
   // #region 'Blog TYPES'
   
   // #region 'blog functions general types'
-    articles: Articles[]
-    setArticles: (array: Articles[]) => void
+    articles: Article[]
+    setArticles: (array: Article[]) => void
     // #endregion
 
   // #endregion
@@ -155,51 +155,51 @@ interface AppStoreState {
   // #region 'Teams TYPES'
 
   // #region 'teams coaches functions general types'
-  coaches: Coaches[]
-  setCoaches: (array: Coaches[]) => void
+  coaches: Coach[]
+  setCoaches: (array: Coach[]) => void
   // #endregion
 
   // #endregion
 
   // #region 'Services TYPES'
-  services: Services[]
-  setServices: (array: Services[]) => void
+  services: Service[]
+  setServices: (array: Service[]) => void
   // #endregion
 
   // #region 'Team-item TYPES'
-  teamItem: Coaches
-  setTeamItem: (object: Coaches) => void
+  teamItem: Coach | null
+  setTeamItem: (object: Coach) => void
   // #endregion
 
   // #region 'Blog-item TYPES'
-  blogItem: Articles
-  setBlogItem: (object: Articles) => void
+  blogItem: Article | null
+  setBlogItem: (object: Article) => void
   // #endregion
 
   // #region 'Service-item TYPES'
-  serviceItem: Services
-  setServiceItem: (object: Services) => void
+  serviceItem: Service | null
+  setServiceItem: (object: Service) => void
   // #endregion
 
   // #region 'Company-item TYPES'
-  companyItem: Companies
-  setCompanyItem: (object: Companies) => void
+  companyItem: Company | null
+  setCompanyItem: (object: Company) => void
   // #endregion
 
   // #region 'Companies TYPES'
-  setCompanies: (array: Companies[]) => void
+  setCompanies: (array: Company[]) => void
   // #endregion
 
   // #region 'Product-item TYPES'
-  productItem: Items
-  setProductItem: (object: Items) => void
-  initialRelatedItems: Items[]
-  setInitialRelatedItems: (array: Items[]) => void
+  productItem: Item | null
+  setProductItem: (object: Item) => void
+  initialRelatedItems: Item[]
+  setInitialRelatedItems: (array: Item[]) => void
   // #endregion
 
   // #region 'Other types'
-  postsFooter: Articles[]
-  setPostsFooter: (array: Articles[]) => void
+  postsFooter: Article[]
+  setPostsFooter: (array: Article[]) => void
   formTouch: []
   setFormTouch: (array: []) => void
   categoryClicked: boolean
@@ -252,14 +252,14 @@ export const useStore = create<AppStoreState>((set, get):AppStoreState => ({
 
     if (signInStatus === true) {
 
-      let itemsCopy: Items[] = JSON.parse(JSON.stringify(get().items))
+      let itemsCopy: Item[] = JSON.parse(JSON.stringify(get().items))
       const index: number = itemsCopy.findIndex(target => target.id === product.id)
 
-      const item: Items = itemsCopy[index]
+      const item: Item = itemsCopy[index]
 
       if (item.stock > 0) {
 
-        const newItem: Items = {
+        const newItem: Item = {
             ...item,
             quantity: item.quantity ? item.quantity + 1 : 1,
             stock: item.stock - 1
@@ -333,18 +333,18 @@ export const useStore = create<AppStoreState>((set, get):AppStoreState => ({
     set({signInStatus: !signInStatus})
   },
 
-  handleButtonRemoveBasket: function (product: Items) {
+  handleButtonRemoveBasket: function (product: Item) {
     
     const { items, bagClickSpan } = get()
 
-    let itemsCopy = JSON.parse(JSON.stringify(items));
+    let itemsCopy: Item[] = JSON.parse(JSON.stringify(items));
     const index = itemsCopy.findIndex(target => target.id === product.id)
 
     const item = itemsCopy[index]
 
     set({bagClickSpan: bagClickSpan - item.quantity})
 
-    const newItem: Items = {
+    const newItem: Item = {
       ...item,
       quantity: 0,
       stock: item.stock + 1
@@ -356,16 +356,16 @@ export const useStore = create<AppStoreState>((set, get):AppStoreState => ({
 
   },
 
-  handleButtonRemoveFavorite: function (product: Items) {
+  handleButtonRemoveFavorite: function (product: Item) {
     
     const { items, favoriteClickSpan } = get()
 
-    let itemsCopy = JSON.parse(JSON.stringify(items));
-    const index = itemsCopy.findIndex(target => target.id === product.id)
+    let itemsCopy: Item[] = JSON.parse(JSON.stringify(items));
+    const index: number = itemsCopy.findIndex(target => target.id === product.id)
 
-    const item = itemsCopy[index]
+    const item: Item = itemsCopy[index]
 
-    const newItem = {
+    const newItem: Item = {
       ...item,
       favorite: false
     }
@@ -377,13 +377,13 @@ export const useStore = create<AppStoreState>((set, get):AppStoreState => ({
 
   },
 
-  handleButtonAddFavorite: function (product: Items) {
+  handleButtonAddFavorite: function (product: Item) {
   
     const { signInStatus, items, favoriteClickSpan } = get()
 
     if (signInStatus === true) {
 
-        let itemsCopy = JSON.parse(JSON.stringify(items))
+        let itemsCopy: Item[] = JSON.parse(JSON.stringify(items))
         const index: number = itemsCopy.findIndex(target => target.id === product.id)
 
         const item = itemsCopy[index]
@@ -414,16 +414,16 @@ export const useStore = create<AppStoreState>((set, get):AppStoreState => ({
 
   },
 
-  handleButtonAddBagRemoveFavorite: function (product: Items) {
+  handleButtonAddBagRemoveFavorite: function (product: Item) {
 
     const {items, bagClickSpan, favoriteClickSpan} = get()
 
-    let itemsCopy = JSON.parse(JSON.stringify(items))
+    let itemsCopy: Item[] = JSON.parse(JSON.stringify(items))
     const index: number = itemsCopy.findIndex(target => target.id === product.id)
 
-    const item: Items = itemsCopy[index]
+    const item: Item = itemsCopy[index]
 
-    const newItem: Items = {
+    const newItem: Item = {
         ...item,
         quantity: item.quantity ? item.quantity + 1 : 1,
         favorite: false
@@ -437,15 +437,15 @@ export const useStore = create<AppStoreState>((set, get):AppStoreState => ({
 
   },
 
-  setUsers: function(array: Items[]) {
+  setUsers: function(array: User[]) {
     set({users: array})
   },
 
-  setItems: function(array: Items[]) {
+  setItems: function(array: Item[]) {
     set({items: array})
   },
 
-  setInitialItems: function(array: Items[])  {
+  setInitialItems: function(array: Item[])  {
     set({initialItems: array})
   },
 
@@ -453,14 +453,14 @@ export const useStore = create<AppStoreState>((set, get):AppStoreState => ({
         
     const {items} = get()
 
-    let productsCopy: Items[] = JSON.parse(JSON.stringify(items))
+    let productsCopy: Item[] = JSON.parse(JSON.stringify(items))
     const index: number = productsCopy.findIndex(target => target.id === objectBasket.id)
 
     const item = productsCopy[index]
 
     if (parseInt(value) <= item.stock) {
         
-        const newItem: Items = { ...item, quantity: parseInt(value) }
+        const newItem: Item = { ...item, quantity: parseInt(value) }
 
         if (newItem.quantity === 0) {
             set({bagClickSpan: 0})
@@ -475,7 +475,7 @@ export const useStore = create<AppStoreState>((set, get):AppStoreState => ({
 
       alert("You cannot have more than the stock of the item")
       
-      const newItem: Items = { ...item, quantity: 1 }
+      const newItem: Item = { ...item, quantity: 1 }
       productsCopy[index] = newItem
 
       set({items: productsCopy})
@@ -569,7 +569,7 @@ export const useStore = create<AppStoreState>((set, get):AppStoreState => ({
     
     const {getUser, signInStatus, signInUserName, userNameSignIn, passwordSignIn} = get()
     
-    const gettingUser = getUser(userNameSignIn, passwordSignIn)
+    const gettingUser: User | undefined = getUser(userNameSignIn, passwordSignIn)
 
     if(gettingUser) {
 
@@ -741,7 +741,7 @@ export const useStore = create<AppStoreState>((set, get):AppStoreState => ({
   // #endregion
 
   // #region 'TEAM ITEM STATE'
-  teamItem: {},
+  teamItem: null,
 
   setTeamItem: function (object) {
     set({teamItem: object})
@@ -749,7 +749,7 @@ export const useStore = create<AppStoreState>((set, get):AppStoreState => ({
   // #endregion
 
   // #region 'BLOG ITEM STATE'
-  blogItem: {},
+  blogItem: null,
 
   setBlogItem: function (object) {
     set({blogItem: object})
@@ -757,7 +757,7 @@ export const useStore = create<AppStoreState>((set, get):AppStoreState => ({
   // #endregion
 
   // #region 'SERVICE ITEM STATE'
-  serviceItem: {},
+  serviceItem: null,
 
   setServiceItem: function (object) {
     set({serviceItem: object})
@@ -765,7 +765,7 @@ export const useStore = create<AppStoreState>((set, get):AppStoreState => ({
   // #endregion
 
   // #region 'COMPANY ITEM STATE'
-  companyItem: {},
+  companyItem: null,
 
   setCompanyItem: function (object) {
     set({companyItem: object})
