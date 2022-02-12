@@ -1,7 +1,7 @@
 import HomeContainer8Article from "./HomeContainer8Article"
 import './HomeContainer8.css'
 import { useEffect } from "react"
-import { useStore } from "../../../Store/store"
+import { useStore } from "../../../zustand/store"
 
 export default function HomeContainer8() {
 

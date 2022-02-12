@@ -1,5 +1,5 @@
 import React from "react"
-import {Item, User, Coach, Company, Service, Article} from "../types/typesStore"
+import {Item, User, Coach, Company, Service, Article} from "./typesStore"
 
 export default interface AppStoreState {
 
@@ -38,6 +38,9 @@ export default interface AppStoreState {
   
     // #region 'General state functions types'
     handleButtonAddBasket: (product: Item) => void
+    setSelectType: (selectValue: string) => void
+    setBagClickSpan: (number: number) => void
+    setFavoriteClickSpan: (number: number) => void
     handleOnSubmitForm: (formValue: string) => void
     handleOnChangeSearchSelect: (e: React.ChangeEvent<HTMLInputElement>) => void
     handleOnChangeSearchTerm: (e: React.ChangeEvent<HTMLInputElement>) => void

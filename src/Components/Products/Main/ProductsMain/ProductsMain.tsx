@@ -6,12 +6,20 @@ import Ribbon2 from '../Ribbon2/Ribbon2'
 import ReactPaginate from 'react-paginate'
 import "../ProductsMain/ProductsMain.css"
 import "../Pagination/Pagination.css"
-import { useStore } from "../../../../Store/store"
+import {Item} from '../../../../zustand/types/typesStore'
+import { useStore } from "../../../../zustand/store"
 // #endregion
 
-function ProductsMain({showItems, pagesVisited, pageCount, changePage}) {
+type Props = {
+    showItems: () => Item[]
+    pagesVisited: number
+    pageCount: number
+    setItemsPerPage: React.Dispatch<React.SetStateAction<number>>
+    changePage: ({selected}:any) => void
+    itemsPerPage: number
+}
 
-    const {itemsPerPage} = useStore()
+function ProductsMain({showItems, pagesVisited, pageCount, changePage, setItemsPerPage, itemsPerPage}:Props) {
 
     // #region 'Returning Html'
     return (
@@ -24,6 +32,7 @@ function ProductsMain({showItems, pagesVisited, pageCount, changePage}) {
                 
                 <Ribbon2 
                     showItems={showItems}
+                    setItemsPerPage= {setItemsPerPage}
                 />
                 
                 <div className="items-container">

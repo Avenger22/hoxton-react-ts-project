@@ -1,5 +1,5 @@
 import {  } from "react"
-import { useStore } from "../../../../Store/store"
+import { useStore } from "../../../../zustand/store"
 import "../Category/Category.css"
 
 export default function Category({item, handleOnClickCategory}) {

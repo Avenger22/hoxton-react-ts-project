@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router"
 import "../StoreItem/StoreItem.css"
-import { useStore } from "../../../../Store/store"
+import { useStore } from "../../../../zustand/store"
 
 function StoreItem({item}) {
 

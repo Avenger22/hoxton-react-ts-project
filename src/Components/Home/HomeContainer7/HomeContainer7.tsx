@@ -1,4 +1,4 @@
-import { useStore } from '../../../Store/store'
+import { useStore } from '../../../zustand/store'
 import './HomeContainer7.css'
 
 export default function HomeContainer7() {

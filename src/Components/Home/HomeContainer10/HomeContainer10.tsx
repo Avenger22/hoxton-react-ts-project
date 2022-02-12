@@ -2,7 +2,7 @@ import HomeContainer10Company from "./HomeContainer10Company"
 import './HomeContainer10.css'
 import { useEffect } from "react"
 import { useNavigate } from "react-router"
-import { useStore } from "../../../Store/store"
+import { useStore } from "../../../zustand/store"
 
 export default function HomeContainer10() {
 

@@ -1,6 +1,6 @@
 import Category from '../Category/Category'
 import "../Aside/Aside.css"
-import { useStore } from '../../../../Store/store'
+import { useStore } from '../../../../zustand/store'
 
 function Aside() {
 

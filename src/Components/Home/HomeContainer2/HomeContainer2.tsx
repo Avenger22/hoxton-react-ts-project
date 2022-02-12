@@ -1,5 +1,5 @@
 import {  } from 'react/cjs/react.development'
-import { useStore } from '../../../Store/store'
+import { useStore } from '../../../zustand/store'
 import '../HomeContainer2/HomeContainer2.css'
 
 export default function HomeContainer2() {

@@ -3,7 +3,7 @@ import "./ProductItem.css"
 import ProductsFooter from "../../Components/Products/Footer/ProductsFooter"
 import RelatedItem from "../../Components/ProductItem/RelatedItem"
 import ProductsHeader from '../../Components/Products/Header/ProductsHeader/ProductsHeader'
-import { useStore } from "../../Store/store";
+import { useStore } from "../../zustand/store";
 import { useEffect } from "react";
 import { useParams } from "react-router";
 import { useNavigate } from "react-router-dom";

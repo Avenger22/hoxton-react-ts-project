@@ -2,7 +2,7 @@ import FavoriteItem from "../../Components/Favorites/FavoriteItem"
 import "./Favorites.css"
 import ProductsFooter from "../../Components/Products/Footer/ProductsFooter"
 import ProductsHeader from "../../Components/Products/Header/ProductsHeader/ProductsHeader"
-import { useStore } from "../../Store/store"
+import { useStore } from "../../zustand/store"
 
 export default function FavoritesPage(props) {
 

@@ -11,9 +11,11 @@
     "react-dom": "^17.0.2",
     "react-paginate": "^8.1.0",
     "react-router-dom": "^6.2.1",
+    "simple-zustand-devtools": "^1.0.1",
     "zustand": "^3.6.9"
   },
   "devDependencies": {
+    "@types/node": "^17.0.17",
     "@types/react": "^17.0.33",
     "@types/react-dom": "^17.0.10",
     "@vitejs/plugin-react": "^1.0.7",

@@ -1,6 +1,6 @@
 import {  } from "react"
 import { useNavigate } from "react-router"
-import { useStore } from "../../Store/store"
+import { useStore } from "../../zustand/store"
 
 function BagItem({product, calculateTotalBasket, filterTotalIndividual}) {
 

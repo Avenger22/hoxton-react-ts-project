@@ -1,4 +1,4 @@
-import { useStore } from "../../../../Store/store"
+import { useStore } from "../../../../zustand/store"
 import "../Form/Form.css"
 
 function Form(props) {

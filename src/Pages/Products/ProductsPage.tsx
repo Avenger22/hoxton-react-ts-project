@@ -3,8 +3,9 @@ import "./Products.css"
 import ProductsHeader from "../../Components/Products/Header/ProductsHeader/ProductsHeader"
 import ProductsMain from "../../Components/Products/Main/ProductsMain/ProductsMain"
 import ProductsFooter from '../../Components/Products/Footer/ProductsFooter'
-import { useStore } from "../../Store/store"
-import { useEffect} from "react"
+import { useStore } from "../../zustand/store"
+import { useEffect, useState} from "react"
+import {Item} from "../../zustand/types/typesStore"
 // #endregion
 
 function Products() {
@@ -12,10 +13,47 @@ function Products() {
     // #region 'Use Store calling and state'
     const {
         selectType, category, searchTerm, searchOnCategory,
-        pageNumber, itemsPerPage, handleChangingPageNumber, 
-        initialItems, setInitialItems, items, setItems
+        initialItems, setInitialItems, items, setItems, signInStatus,
+        bagClickSpan, setBagClickSpan, setFavoriteClickSpan
     } = useStore()
     // #endregion
+    
+    function handleButtonAddBasket(product: Item) {
+    
+        if (signInStatus === true) {
+    
+          let itemsCopy: Item[] = JSON.parse(JSON.stringify(items))
+          const index: number = itemsCopy.findIndex(target => target.id === product.id)
+    
+          const item: Item = itemsCopy[index]
+    
+          if (item.stock > 0) {
+    
+            const newItem: Item = {
+                ...item,
+                quantity: item.quantity ? item.quantity + 1 : 1,
+                stock: item.stock - 1
+            }
+    
+            itemsCopy[index] = newItem
+    
+            setBagClickSpan(1)
+            setItems(itemsCopy)
+    
+          }
+    
+          else {
+            alert('You cannot add an item in the bag with no stock')
+          }
+    
+        }
+    
+        else {
+          alert('You need to be signed in to add to bag')
+        }
+    
+    }
+
     
     // #region 'Server functions'
     function getInitialItemsFromServer() {
@@ -42,14 +80,14 @@ function Products() {
     useEffect(getItemsFromServer, [])
     // #endregion
 
-    let globalItemsToDisplay = []
+    let globalItemsToDisplay: Item[] = []
 
     // #region 'Helper Functions'
 
     // #region 'Filter Functions'
 
     // #region 'filter search'
-    function searchByName(itemToDisplaySorted) {
+    function searchByName(itemToDisplaySorted: Item[]) {
 
         return itemToDisplaySorted.filter(function (item) {
             return item.name.toLowerCase().includes(searchTerm.toLowerCase())
@@ -141,9 +179,9 @@ function Products() {
     // #region 'Filtering Display Function'
     function showItems() {
 
-        let itemsToDisplay = []
-        let itemToDisplaySorted = []
-        let initialFilteredItems = JSON.parse(JSON.stringify(initialItems))
+        let itemsToDisplay: Item[] = []
+        let itemToDisplaySorted: Item[] = []
+        let initialFilteredItems: Item[] = JSON.parse(JSON.stringify(initialItems))
     
         // #region 'Conditionals for ---search select--- based on cagetories with searched item'
         if (searchTerm === '' && category === 'Default' && selectType === 'Default') {
@@ -1285,17 +1323,20 @@ function Products() {
 
     // #region 'Pagination feature'
 
+    const [pageNumber, setPageNumber] = useState(0)
+    const [itemsPerPage, setItemsPerPage] = useState(8)
+    
     let pagesVisited = pageNumber * itemsPerPage
     const pageCount = Math.ceil(showItems().length / itemsPerPage)
 
-    const changePage = ({ selected }) => {
+    const changePage = ({ selected }:any):void => {
 
         if (pagesVisited > 15) {
-            handleChangingPageNumber(0)
+            setPageNumber(0)
         }
 
         else {
-            handleChangingPageNumber(selected)
+            setPageNumber(selected)
         }
         
     }
@@ -1315,6 +1356,8 @@ function Products() {
                     pagesVisited = {pagesVisited}
                     changePage={changePage}
                     pageCount={pageCount}
+                    setItemsPerPage = {setItemsPerPage}
+                    itemsPerPage = {itemsPerPage}
                 />
                     
                 <ProductsFooter />

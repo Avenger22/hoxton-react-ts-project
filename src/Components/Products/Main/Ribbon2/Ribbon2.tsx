@@ -1,9 +1,23 @@
-import { useStore } from "../../../../Store/store"
+import { useStore } from "../../../../zustand/store"
 import "../Ribbon2/Ribbon2.css"
+import {Item} from '../../../../zustand/types/typesStore'
 
-function Ribbon2({showItems}) {
+type Props = {
+    showItems: () => Item[]
+    setItemsPerPage: React.Dispatch<React.SetStateAction<number>>
+}
 
-    const {handleOnChangeSelect, handleOnChangeSelectPerPage} = useStore()
+function Ribbon2({showItems, setItemsPerPage}:Props) {
+
+    const {setSelectType} = useStore()
+
+    function handleOnChangeSelect (selectValue: string):void {
+        setSelectType(selectValue)
+    }
+
+    function handleOnChangeSelectPerPage(selectValue:string):void {
+        setItemsPerPage(Number(selectValue))
+    }
 
     return (
 

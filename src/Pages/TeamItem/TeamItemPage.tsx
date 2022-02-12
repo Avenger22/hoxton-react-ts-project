@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom"
 import "./TeamItem.css"
 import HeaderCommon from "../../Components/Common/HeaderCommon/HeaderCommon"
 import FooterCommon from "../../Components/Common/FooterCommon/FooterCommon"
-import { useStore } from "../../Store/store"
+import { useStore } from "../../zustand/store"
 
 export default function TeamItemPage() {
 

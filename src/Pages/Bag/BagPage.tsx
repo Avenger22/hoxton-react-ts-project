@@ -2,7 +2,7 @@ import {useNavigate } from "react-router"
 import BagItem from "../../Components/Bag/BagItem"
 import ProductsFooter from "../../Components/Products/Footer/ProductsFooter"
 import ProductsHeader from "../../Components/Products/Header/ProductsHeader/ProductsHeader"
-import { useStore } from "../../Store/store"
+import { useStore } from "../../zustand/store"
 import "./Bag.css"
 
 export default function BagPage() {

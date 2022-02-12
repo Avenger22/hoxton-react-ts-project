@@ -2,7 +2,7 @@ import HomeContainer6Card from "./HomeContainer6Card"
 import './HomeContainer6.css'
 import { useEffect } from "react"
 import { useNavigate } from "react-router"
-import { useStore } from "../../../Store/store"
+import { useStore } from "../../../zustand/store"
 
 export default function HomeContainer6() {
 

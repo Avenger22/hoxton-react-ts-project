@@ -2,7 +2,7 @@ import HomeContainer4Card from "./HomeContainer4Card"
 import './HomeContainer4.css'
 import { useNavigate } from "react-router"
 import { useEffect} from "react"
-import { useStore } from "../../../Store/store"
+import { useStore } from "../../../zustand/store"
 
 export default function HomeContainer4() {
 

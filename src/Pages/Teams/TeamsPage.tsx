@@ -2,7 +2,7 @@ import { useEffect} from "react";
 import FooterCommon from "../../Components/Common/FooterCommon/FooterCommon";
 import HeaderCommon from "../../Components/Common/HeaderCommon/HeaderCommon";
 import Coach from "../../Components/Teams/Coach";
-import { useStore } from "../../Store/store";
+import { useStore } from "../../zustand/store";
 import "./Teams.css"
 
 export default function TeamsPage() {

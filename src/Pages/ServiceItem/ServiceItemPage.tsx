@@ -3,7 +3,7 @@ import HeaderCommon from "../../Components/Common/HeaderCommon/HeaderCommon"
 import FooterCommon from "../../Components/Common/FooterCommon/FooterCommon"
 import { useEffect } from "react"
 import { useParams } from "react-router"
-import { useStore } from "../../Store/store"
+import { useStore } from "../../zustand/store"
 
 export default function ServiceItemPage() {
 

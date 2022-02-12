@@ -1,7 +1,7 @@
 import HeaderCommon from "../../Components/Common/HeaderCommon/HeaderCommon";
 import FooterCommon from "../../Components/Common/FooterCommon/FooterCommon"
 import "./Payment.css"
-import { useStore } from "../../Store/store";
+import { useStore } from "../../zustand/store";
 
 export default function PaymentPage() {
 

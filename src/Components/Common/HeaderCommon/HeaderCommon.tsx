@@ -1,7 +1,7 @@
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import '../HeaderCommon/HeaderCommon.css'
 
-import {useStore} from "../../../Store/store"
+import {useStore} from "../../../zustand/store"
 
 export default function HeaderCommon() {
 

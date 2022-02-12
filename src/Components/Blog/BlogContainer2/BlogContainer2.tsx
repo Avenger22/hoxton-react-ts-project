@@ -1,7 +1,7 @@
 import BlogContainer2Article from "./BlogContainer2Article"
 import "../BlogContainer2/BlogContainer2.css"
 import { Link } from "react-router-dom"
-import {useStore} from "../../../Store/store"
+import {useStore} from "../../../zustand/store"
 import { useEffect } from "react"
 
 export default function BlogContainer2() {

@@ -1,4 +1,4 @@
-import { useStore } from "../../../Store/store"
+import { useStore } from "../../../zustand/store"
 import "../ContactContainer3/ContactContainer3.css"
 
 export default function ContactContainer3() {

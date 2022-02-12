@@ -1,6 +1,7 @@
 import create from 'zustand'
-import AppStoreState from '../types/interfaceStore'
-import {Item, User, Coach, Company, Service, Article, FormType, TextAreaType} from "../types/typesStore"
+import AppStoreState from '../zustand/types/interfaceStore'
+import {Item, User, Coach, Company, Service, Article, FormType, TextAreaType} from "./types/typesStore"
+import { mountStoreDevtool } from 'simple-zustand-devtools';
 
 // #region 'Zustand STATE MANAGEMENT STORE'
 export const useStore = create<AppStoreState>((set, get):AppStoreState => ({
@@ -94,8 +95,56 @@ export const useStore = create<AppStoreState>((set, get):AppStoreState => ({
 
   },
 
+  setBagClickSpan: function (number) {
+
+    const {bagClickSpan} = get()
+
+    if (number === 1) {
+      set({bagClickSpan: bagClickSpan + number})
+    }
+
+    else if(number === -1) {
+      set({bagClickSpan: bagClickSpan - number})
+    }
+
+    else if(number === 0) {
+      set({bagClickSpan: number})
+    }
+    
+    else {
+      set({bagClickSpan: bagClickSpan + number})
+    }
+
+  },
+
+  setFavoriteClickSpan: function (number) {
+
+    const {favoriteClickSpan} = get()
+
+    if (number === 1) {
+      set({bagClickSpan: favoriteClickSpan + number})
+    }
+
+    else if(number === -1) {
+      set({bagClickSpan: favoriteClickSpan - number})
+    }
+
+    else if(number === 0) {
+      set({bagClickSpan: number})
+    }
+    
+    else {
+      set({bagClickSpan: favoriteClickSpan + number})
+    }
+    
+  },
+
   handleOnChangeSearchTerm: function(e) {
     set({searchTerm: e.target.value})
+  },
+
+  setSelectType: function(selectValue) {
+    set({selectType: selectValue})
   },
 
   handleOnClickCategory: function (liValue) {
@@ -292,7 +341,9 @@ export const useStore = create<AppStoreState>((set, get):AppStoreState => ({
 
   // #region 'Functions for Contact us State'
   handleTextAreaChange: function (e) {
-    const textAreaEl = e.target.textareaContact as TextAreaType
+    // @ts-ignore
+    const textAreaEl:any = e.target.textareaContact as TextAreaType
+     // @ts-ignore
     set({textArea: textAreaEl.value})
   },
 
@@ -328,6 +379,7 @@ export const useStore = create<AppStoreState>((set, get):AppStoreState => ({
         }
     ]
 
+     // @ts-ignore
     const newArray: {email: string, subject: string, textArea: string, fullName: string, phone: string}[] = [...formContactUs, array]
 
     formEl.reset()
@@ -613,4 +665,8 @@ export const useStore = create<AppStoreState>((set, get):AppStoreState => ({
 
 }))
 
+if (process.env.NODE_ENV === 'development') {
+   // @ts-ignore
+  mountStoreDevtool('Store', useStore);
+}
 // #endregion

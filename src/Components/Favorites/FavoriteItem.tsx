@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router"
-import { useStore } from "../../Store/store"
+import { useStore } from "../../zustand/store"
 
 function FavoriteItem(props) {
 

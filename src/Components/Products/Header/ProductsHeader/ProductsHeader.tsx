@@ -2,7 +2,7 @@ import Form from '../Form/Form'
 import {Link, useNavigate} from 'react-router-dom'
 import UlSub2li from '../UlSubLi/UlSub2Li'
 import "../ProductsHeader/ProductsHeader.css"
-import { useStore } from '../../../../Store/store'
+import { useStore } from '../../../../zustand/store'
 
 function ProductsHeader() {
 

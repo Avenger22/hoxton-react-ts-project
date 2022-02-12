@@ -4,7 +4,7 @@ import Service from "../../Components/Servicess/Service"
 import HeaderCommon from "../../Components/Common/HeaderCommon/HeaderCommon"
 import FooterCommon from "../../Components/Common/FooterCommon/FooterCommon"
 import { useEffect } from "react"
-import { useStore } from "../../Store/store"
+import { useStore } from "../../zustand/store"
 
 export default function ServicesPage() {
 
