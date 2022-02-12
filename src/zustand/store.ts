@@ -1,6 +1,6 @@
 import create from 'zustand'
-import AppStoreState from '../zustand/types/interfaceStore'
-import {Item, User, Coach, Company, Service, Article, FormType, TextAreaType} from "./types/typesStore"
+import AppStoreState from '../types/interfaceStore'
+import {Item, User, Coach, Company, Service, Article, FormType, TextAreaType} from "../types/typesStore"
 import { mountStoreDevtool } from 'simple-zustand-devtools';
 
 // #region 'Zustand STATE MANAGEMENT STORE'

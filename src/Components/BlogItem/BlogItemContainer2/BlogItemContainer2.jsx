@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import {  } from 'react'
-import { useStore } from '../../../Store/store'
+import { useStore } from '../../../zustand/store'
 import '../BlogItemContainer2/BlogItemContainer2.css'
 import BlogItemRelatedImg from './BlogItemRelatedImg'
 

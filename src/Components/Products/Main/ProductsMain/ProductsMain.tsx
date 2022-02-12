@@ -6,7 +6,7 @@ import Ribbon2 from '../Ribbon2/Ribbon2'
 import ReactPaginate from 'react-paginate'
 import "../ProductsMain/ProductsMain.css"
 import "../Pagination/Pagination.css"
-import {Item} from '../../../../zustand/types/typesStore'
+import {Item} from '../../../../types/typesStore'
 import { useStore } from "../../../../zustand/store"
 // #endregion
 

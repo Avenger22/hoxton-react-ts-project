@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { useStore } from "../../../Store/store"
+import { useStore } from "../../../zustand/store"
 
 import HeaderCommon from "../../Common/HeaderCommon/HeaderCommon"
 

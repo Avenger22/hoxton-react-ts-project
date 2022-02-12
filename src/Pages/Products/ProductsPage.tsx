@@ -5,7 +5,7 @@ import ProductsMain from "../../Components/Products/Main/ProductsMain/ProductsMa
 import ProductsFooter from '../../Components/Products/Footer/ProductsFooter'
 import { useStore } from "../../zustand/store"
 import { useEffect, useState} from "react"
-import {Item} from "../../zustand/types/typesStore"
+import {Item} from "../../types/typesStore"
 // #endregion
 
 function Products() {

@@ -1,6 +1,6 @@
 import { useStore } from "../../../../zustand/store"
 import "../Ribbon2/Ribbon2.css"
-import {Item} from '../../../../zustand/types/typesStore'
+import {Item} from '../../../../types/typesStore'
 
 type Props = {
     showItems: () => Item[]
